@@ -55,5 +55,24 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "python.REPL.enableREPLSmartSend": false,
+  "files.associations": {
+    "iostream": "cpp",
+    "exception": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "iterator": "cpp",
+    "memory": "cpp",
+    "ostream": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp",
+    "vector": "cpp",
+    "xiosbase": "cpp",
+    "xstring": "cpp",
+    "concepts": "cpp",
+    "xutility": "cpp"
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }

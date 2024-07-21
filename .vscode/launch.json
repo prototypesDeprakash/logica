@@ -2,14 +2,273 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "missing_number",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.missing_number",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "secondmaxvalue",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.secondmaxvalue",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "minvalue",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.minvalue",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversearray",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.reversearray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeeven",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.removeeven",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "duplicate_zeros_optimal",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.duplicate_zeros_optimal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "duplicate_zeros",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.duplicate_zeros",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "subarray_101",
+      "request": "launch",
+      "mainClass": "subarray_101",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stackreverse",
+      "request": "launch",
+      "mainClass": "stackreverse",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "MyHashSet",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.MyHashSet",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hashtable",
+      "request": "launch",
+      "mainClass": "DS_and_A.hashmapandarray.hashtable",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basic",
+      "request": "launch",
+      "mainClass": "matrix.basic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "J_93_happynumber$J_93_happynumber",
+      "request": "launch",
+      "mainClass": "J_93_happynumber$J_93_happynumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "squarepattern",
+      "request": "launch",
+      "mainClass": "DS_and_A.patterns.squarepattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nestedloop",
+      "request": "launch",
+      "mainClass": "DS_and_A.loopsbasic.nestedloop",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "threadsync",
+      "request": "launch",
+      "mainClass": "JAVA_core.threadsync",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "threadsynch",
+      "request": "launch",
+      "mainClass": "JAVA_core.threadsynch",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "excepusd2",
+      "request": "launch",
+      "mainClass": "JAVA_core.excepusd2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "exceptionuserdefined",
+      "request": "launch",
+      "mainClass": "JAVA_core.exceptionuserdefined",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "exceptionuser",
+      "request": "launch",
+      "mainClass": "JAVA_core.exceptionuser",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "exceptioninjava",
+      "request": "launch",
+      "mainClass": "JAVA_core.exceptioninjava",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dynamicdspatch",
+      "request": "launch",
+      "mainClass": "JAVA_core.dynamicdspatch",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dynamicdispatch",
+      "request": "launch",
+      "mainClass": "JAVA_core.dynamicdispatch",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dog",
+      "request": "launch",
+      "mainClass": "JAVA_core.dog",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "GarbageCollectionExample",
+      "request": "launch",
+      "mainClass": "JAVA_core.GarbageCollectionExample",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "FinClass",
+      "request": "launch",
+      "mainClass": "JAVA_core.FinClass",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "finvar",
+      "request": "launch",
+      "mainClass": "JAVA_core.finvar",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "OuterClass",
+      "request": "launch",
+      "mainClass": "JAVA_core.OuterClass",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "defaultconstructor",
+      "request": "launch",
+      "mainClass": "JAVA_core.defaultconstructor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "constructor",
+      "request": "launch",
+      "mainClass": "JAVA_core.constructor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "zerosumanother",
+      "request": "launch",
+      "mainClass": "DS_and_A.craking_CI.chapter1_array.zerosumanother",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "zerosumarray",
+      "request": "launch",
+      "mainClass": "DS_and_A.craking_CI.chapter1_array.zerosumarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeduplicatecharacter",
+      "request": "launch",
+      "mainClass": "DS_and_A.craking_CI.chapter1_array.removeduplicatecharacter",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "zoho_alternatesorting",
+      "request": "launch",
+      "mainClass": "leetcode_problems.zoho_alternatesorting",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "l_82longestsubstringwithoutrepeatingcharacter",
+      "request": "launch",
+      "mainClass": "leetcode_problems.l_82longestsubstringwithoutrepeatingcharacter",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "l_88totalnoossubarrequaltok",
+      "request": "launch",
+      "mainClass": "leetcode_problems.l_88totalnoossubarrequaltok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "l_88ONTINUSSUBARRAYjAVA",
+      "request": "launch",
+      "mainClass": "leetcode_problems.l_88ONTINUSSUBARRAYjAVA",
+      "projectName": "logica_bbe493a1"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/prave/OneDrive/Desktop/c/Dslab_prep",
-      "program": "c:/Users/prave/OneDrive/Desktop/c/Dslab_prep/build/Debug/outDebug",
+      "cwd": "c:/Users/prave/OneDrive/Desktop/logica/DS_and_A/cpp",
+      "program": "c:/Users/prave/OneDrive/Desktop/logica/DS_and_A/cpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
