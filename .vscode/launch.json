@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "merge_104_",
+      "request": "launch",
+      "mainClass": "leetcode_problems.merge_104_",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Singlylinkedlist_1",
+      "request": "launch",
+      "mainClass": "DS_and_A.linkedlist.Singlylinkedlist_1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Sortbyfrequency_128",
+      "request": "launch",
+      "mainClass": "Sortbyfrequency_128",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "missing_number",
       "request": "launch",
       "mainClass": "DS_and_A.hashmapandarray.missing_number",
