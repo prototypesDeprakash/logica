@@ -3,6 +3,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "primenumber",
+      "request": "launch",
+      "mainClass": "leetcode_problems.primenumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "singlylinkedlist1",
+      "request": "launch",
+      "mainClass": "manipulatingnodes.singlylinkedlist1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "singlylinklis",
+      "request": "launch",
+      "mainClass": "singlylinklis",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "java_delimit",
+      "request": "launch",
+      "mainClass": "Skillrack.java_delimit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stac",
+      "request": "launch",
+      "mainClass": "stac",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "linkedlist3",
+      "request": "launch",
+      "mainClass": "linkedlist3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oddeven",
+      "request": "launch",
+      "mainClass": "Skillrack.oddeven",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "merge_sort_2",
+      "request": "launch",
+      "mainClass": "merge_sort_2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reverselinkedlist",
+      "request": "launch",
+      "mainClass": "reverselinkedlist",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "merge_sort",
+      "request": "launch",
+      "mainClass": "merge_sort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "merge_104_",
       "request": "launch",
       "mainClass": "leetcode_problems.merge_104_",

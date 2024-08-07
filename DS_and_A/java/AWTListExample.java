@@ -1,6 +1,7 @@
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Scanner;
 
 public class AWTListExample extends Frame implements ActionListener {
     // Create List component
@@ -20,7 +21,8 @@ public class AWTListExample extends Frame implements ActionListener {
         fruitList.add("Cherry");
         fruitList.add("Grape");
         fruitList.add("Orange");
-
+Scanner sc = new Scanner(System.in);
+char c  = sc.nextLine().charAt(0);
         Choice c = new Choice();
         c.add("Hello");
         c.add("bro");
