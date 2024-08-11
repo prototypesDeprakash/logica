@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "spiralmatrix2",
+      "request": "launch",
+      "mainClass": "spiralmatrix2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "spiralmatrix",
+      "request": "launch",
+      "mainClass": "spiralmatrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "primenumber",
       "request": "launch",
       "mainClass": "leetcode_problems.primenumber",
