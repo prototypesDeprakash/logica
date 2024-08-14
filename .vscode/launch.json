@@ -3,6 +3,90 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hashset",
+      "request": "launch",
+      "mainClass": "HashMapFull.hashset",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "twosum",
+      "request": "launch",
+      "mainClass": "HashMapFull.twosum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hashbasic",
+      "request": "launch",
+      "mainClass": "HashMapFull.hashbasic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergesort_rev_2",
+      "request": "launch",
+      "mainClass": "mergesort_rev_2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergesorerevision",
+      "request": "launch",
+      "mainClass": "mergesorerevision",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "p1263pattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.p1263pattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "invertednumberrightpattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.invertednumberrightpattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "simple112233pattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.simple112233pattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "simple123pattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.simple123pattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "righttriangle",
+      "request": "launch",
+      "mainClass": "zoho_patterns.righttriangle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "invertedrighttriangle",
+      "request": "launch",
+      "mainClass": "zoho_patterns.invertedrighttriangle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basicpattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.basicpattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "spiralmatrix2",
       "request": "launch",
       "mainClass": "spiralmatrix2",
