@@ -3,6 +3,97 @@
   "configurations": [
     {
       "type": "java",
+      "name": "arraydoubleexist",
+      "request": "launch",
+      "mainClass": "Array.arraydoubleexist",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeduplicatesfromsortedarray",
+      "request": "launch",
+      "mainClass": "Array.removeduplicatesfromsortedarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeelement",
+      "request": "launch",
+      "mainClass": "Array.removeelement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "findingmiddlenode",
+      "request": "launch",
+      "mainClass": "manipulatingnodes.findingmiddlenode",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "spaceandstar",
+      "request": "launch",
+      "mainClass": "zoho_star_pattterns.spaceandstar",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fullstarright",
+      "request": "launch",
+      "mainClass": "zoho_star_pattterns.fullstarright",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "inverserighttriangle",
+      "request": "launch",
+      "mainClass": "zoho_star_pattterns.inverserighttriangle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "righttriaglestar",
+      "request": "launch",
+      "mainClass": "zoho_star_pattterns.righttriaglestar",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "duplicatezeros",
+      "request": "launch",
+      "mainClass": "Array.duplicatezeros",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "twosumhashmap",
+      "request": "launch",
+      "mainClass": "HashMapFull.twosumhashmap",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hashmapbasics",
+      "request": "launch",
+      "mainClass": "HashMapFull.hashmapbasics",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "msredo",
+      "request": "launch",
+      "mainClass": "recursion_basics.msredo",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "happynumber",
+      "request": "launch",
+      "mainClass": "HashMapFull.happynumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "hashset",
       "request": "launch",
       "mainClass": "HashMapFull.hashset",
