@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mergesort",
+      "request": "launch",
+      "mainClass": "mergesort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fibbonaci",
+      "request": "launch",
+      "mainClass": "fibbonaci",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "binarysearchrecursion",
+      "request": "launch",
+      "mainClass": "binarysearchrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "binarysearchnormal",
+      "request": "launch",
+      "mainClass": "binarysearchnormal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "sumofnnumber",
       "request": "launch",
       "mainClass": "sumofnnumber",

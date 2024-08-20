@@ -1,4 +1,6 @@
-package DS_and_A.loopsbasic;
+package loopsbasic;
+
+
 
 public class nestedloop {
     public static void main(String[] args) {
