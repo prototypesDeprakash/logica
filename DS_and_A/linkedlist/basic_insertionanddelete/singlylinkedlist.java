@@ -99,24 +99,24 @@ public void insertatpos(int data, int pos){
 }
     public static void main(String[] args) {
         singlylinkedlist sll = new singlylinkedlist();
-        sll.head=new ListNode(10);
-        ListNode secondnode= new ListNode(20);
-        ListNode thirdnode= new ListNode(30);
-        ListNode fourthnode = new ListNode(40);
+        // sll.head=new ListNode(10);
+        // ListNode secondnode= new ListNode(20);
+        // ListNode thirdnode= new ListNode(30);
+        // ListNode fourthnode = new ListNode(40);
 
-        //basic node link
-        sll.head.next=secondnode;
-        secondnode.next=thirdnode;
-        thirdnode.next=fourthnode;
+        // //basic node link
+        // sll.head.next=secondnode;
+        // secondnode.next=thirdnode;
+        // thirdnode.next=fourthnode;
 
         
 
         //insert begining
-        sll.insertbeg(0);
-        sll.deletebeg();
+       // sll.insertbeg(0);
+        //sll.deletebeg();
         sll.insertend(200);
-        sll.deleteend();
-        sll.insertatpos(500, 3);
+        //sll.deleteend();
+        //sll.insertatpos(500, 3);
 
         //displaying the linked list
         sll.display();

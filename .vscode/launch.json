@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "sumofnnumber",
+      "request": "launch",
+      "mainClass": "sumofnnumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Attach",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": "<debug port of the debuggee>"
+    },
+    {
+      "type": "java",
+      "name": "decimaltobinaryrecursion",
+      "request": "launch",
+      "mainClass": "decimaltobinaryrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "plaindromrecursion",
+      "request": "launch",
+      "mainClass": "plaindromrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "singlylinkedlist",
+      "request": "launch",
+      "mainClass": "basic_insertionanddelete.singlylinkedlist",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "singlyliskedlistpractiusen",
+      "request": "launch",
+      "mainClass": "singlyliskedlistpractiusen",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "arraydoubleexist",
       "request": "launch",
       "mainClass": "Array.arraydoubleexist",
