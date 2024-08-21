@@ -1,6 +1,3 @@
-package recursion_basics;
-
-
 public class msredo {
     private static void merge_sort(int[] arr){
         int length = arr.length;

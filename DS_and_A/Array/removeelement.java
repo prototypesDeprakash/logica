@@ -6,8 +6,8 @@ package Array;
 public class removeelement {
 
     public static void main(String[] args) {
-        int [] a = {3,2,2,3,2,2,2,2,2,3,3,3,3};
-        int val = 3;
+        int [] a = {1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2};
+        int val =1;
         //output should be [2,2,_,_];
 
         //first move all the val to the end 
@@ -33,7 +33,9 @@ public class removeelement {
         for(int k=0;k<a.length;k++){
             if(a[k]==val){
                 a[k]=0;
+                
             }
+            System.out.print(a[i]);
         }
 
     }

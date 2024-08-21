@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "sumofdigitsrecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.sumofdigitsrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumofnnumbers",
+      "request": "launch",
+      "mainClass": "recursion_core.sumofnnumbers",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hellorecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.hellorecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "linkedlistbase",
+      "request": "launch",
+      "mainClass": "listalgorithms.linkedlistbase",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeelemet",
+      "request": "launch",
+      "mainClass": "Array.removeelemet",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergesort4",
+      "request": "launch",
+      "mainClass": "mergesort4",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "mergesort",
       "request": "launch",
       "mainClass": "mergesort",
