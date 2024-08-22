@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "resursionsumofdigit",
+      "request": "launch",
+      "mainClass": "recursion_core.resursionsumofdigit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stringpalindrom",
+      "request": "launch",
+      "mainClass": "recursion_core.stringpalindrom",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fibbonacci",
+      "request": "launch",
+      "mainClass": "recursion_core.fibbonacci",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "twotrianglepattern",
+      "request": "launch",
+      "mainClass": "recursion_core.twotrianglepattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "patternprinting",
+      "request": "launch",
+      "mainClass": "recursion_core.patternprinting",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "factorialrecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.factorialrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "sumofdigitsrecursion",
       "request": "launch",
       "mainClass": "recursion_core.sumofdigitsrecursion",
