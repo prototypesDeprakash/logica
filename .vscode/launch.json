@@ -3,6 +3,97 @@
   "configurations": [
     {
       "type": "java",
+      "name": "highestaltitude",
+      "request": "launch",
+      "mainClass": "Array.highestaltitude",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "candies",
+      "request": "launch",
+      "mainClass": "codeForces_easyProblems.candies",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reverseanarray",
+      "request": "launch",
+      "mainClass": "Array.reverseanarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reverseanumber",
+      "request": "launch",
+      "mainClass": "recursion_core.reverseanumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumofdigit",
+      "request": "launch",
+      "mainClass": "recursion_core.sumofdigit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "factor",
+      "request": "launch",
+      "mainClass": "recursion_core.factor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "linearsearrchrecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.linearsearrchrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fibbonaciwithrecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.fibbonaciwithrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "merge_sortAgain",
+      "request": "launch",
+      "mainClass": "recursion_core.merge_sortAgain",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversinganumberrecur",
+      "request": "launch",
+      "mainClass": "recursion_core.reversinganumberrecur",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "patternwithrecursion",
+      "request": "launch",
+      "mainClass": "recursion_core.patternwithrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oneton",
+      "request": "launch",
+      "mainClass": "recursion_core.oneton",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergesort",
+      "request": "launch",
+      "mainClass": "recursion_core.mergesort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "resursionsumofdigit",
       "request": "launch",
       "mainClass": "recursion_core.resursionsumofdigit",
