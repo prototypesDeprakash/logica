@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mergesortrecall1",
+      "request": "launch",
+      "mainClass": "recursion_core.mergesortrecall1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "football",
+      "request": "launch",
+      "mainClass": "codeForces_easyProblems.football",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "validmountain",
       "request": "launch",
       "mainClass": "Array.validmountain",

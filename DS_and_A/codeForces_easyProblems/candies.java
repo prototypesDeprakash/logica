@@ -1,3 +1,5 @@
+package codeForces_easyProblems;
+
 
 
 import java.util.Scanner;
