@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "arraylinearsearch",
+      "request": "launch",
+      "mainClass": "recursion_core.arraylinearsearch",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "arraysortedoptimal",
+      "request": "launch",
+      "mainClass": "recursion_core.arraysortedoptimal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "arraysorted",
+      "request": "launch",
+      "mainClass": "recursion_core.arraysorted",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "mergesortrecall1",
       "request": "launch",
       "mainClass": "recursion_core.mergesortrecall1",
