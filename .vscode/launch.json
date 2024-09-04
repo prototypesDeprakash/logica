@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "llrec",
+      "request": "launch",
+      "mainClass": "llrec",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "linearsearchnoarg",
+      "request": "launch",
+      "mainClass": "recursion_core.linearsearchnoarg",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "linearsearchfindall2",
+      "request": "launch",
+      "mainClass": "recursion_core.linearsearchfindall2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "mersor",
       "request": "launch",
       "mainClass": "recursion_core.mersor",

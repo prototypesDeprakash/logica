@@ -4,11 +4,12 @@
 public class sep2chalksum {
 
     public static void main(String[] args) {
-        int[] chalk = {3,4,1,2};
-        int k=25;
+        int[] chalk = {5,1,5};
+        int k=22;
         int i=0;
         while ( (true)) {
-            if(k<=0){
+            if(k<chalk[i]){
+                
                 break;
             }
            
