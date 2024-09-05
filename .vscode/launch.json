@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "sep4robotwalking",
+      "request": "launch",
+      "mainClass": "leetcode_problems.sep4robotwalking",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "llrec",
       "request": "launch",
       "mainClass": "llrec",

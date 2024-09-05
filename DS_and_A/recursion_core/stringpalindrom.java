@@ -11,4 +11,4 @@ public class stringpalindrom {
     public static void main(String[] args) {
         System.out.println(pallindrom("bibiibib"));
     }
-}
+1
