@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "basicsubset",
+      "request": "launch",
+      "mainClass": "subsetAndSubsequence.basicsubset",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "bubblesort",
+      "request": "launch",
+      "mainClass": "recursion_core.bubblesort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "pat_1",
+      "request": "launch",
+      "mainClass": "recursion_core.pat_1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "ms",
       "request": "launch",
       "mainClass": "recursion_core.ms",
