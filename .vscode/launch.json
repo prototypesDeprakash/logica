@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "spiralmatrix3",
+      "request": "launch",
+      "mainClass": "spiralmatrix3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "skipasting",
+      "request": "launch",
+      "mainClass": "subsetAndSubsequence.skipasting",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "rem_a_p",
+      "request": "launch",
+      "mainClass": "subsetAndSubsequence.rem_a_p",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "llrec",
+      "request": "launch",
+      "mainClass": "linkedlist.llrec",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "sep_8_contest_numtobinary",
       "request": "launch",
       "mainClass": "leetcode_problems.sep_8_contest_numtobinary",

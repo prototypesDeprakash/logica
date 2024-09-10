@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class llrec {
     private static Listnode head;
     private static class Listnode {
