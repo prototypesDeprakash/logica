@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "numberwithevennoofdigit",
+      "request": "launch",
+      "mainClass": "Array.numberwithevennoofdigit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Max_consecutive_ones",
+      "request": "launch",
+      "mainClass": "Array.Max_consecutive_ones",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversestring",
+      "request": "launch",
+      "mainClass": "recursion_core.reversestring",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "checkifasubstring",
+      "request": "launch",
+      "mainClass": "subsetAndSubsequence.checkifasubstring",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "climbingStairs",
+      "request": "launch",
+      "mainClass": "Dynamic_Programming.climbingStairs",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "printallsubset",
       "request": "launch",
       "mainClass": "subsetAndSubsequence.printallsubset",

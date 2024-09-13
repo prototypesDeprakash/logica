@@ -13,6 +13,6 @@ public class printallsubset {
     }
 
     public static void main(String[] args) {
-     printsubset("", "abc");   
+     printsubset("", "ahbgdc");   
     }
 }
