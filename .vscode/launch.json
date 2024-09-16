@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "minimumdifference",
+      "request": "launch",
+      "mainClass": "Array.minimumdifference",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sep15_contest2prob",
+      "request": "launch",
+      "mainClass": "sep15_contest2prob",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "duplicatezeros2",
+      "request": "launch",
+      "mainClass": "Array.duplicatezeros2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "numberwithevennoofdigit",
       "request": "launch",
       "mainClass": "Array.numberwithevennoofdigit",
