@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "uncommonwords",
+      "request": "launch",
+      "mainClass": "uncommonwords",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "minimumdifference",
       "request": "launch",
       "mainClass": "Array.minimumdifference",
