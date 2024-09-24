@@ -3,6 +3,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "spiralMatrix",
+      "request": "launch",
+      "mainClass": "matrix.spiralMatrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "slidingwindowBasic",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.slidingwindowBasic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubaraybrutef",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubaraybrutef",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maxsumofelement",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.maxsumofelement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "TrailingZeros",
+      "request": "launch",
+      "mainClass": "TrailingZeros",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "countdigits",
+      "request": "launch",
+      "mainClass": "countdigits",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "likiedlistalgos$Listnode",
+      "request": "launch",
+      "mainClass": "linkedlistPractise.likiedlistalgos$Listnode",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "replacewithgonright",
+      "request": "launch",
+      "mainClass": "Array.replacewithgonright",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mountainarray",
+      "request": "launch",
+      "mainClass": "Array.mountainarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "largestNumber18_dailysum",
       "request": "launch",
       "mainClass": "largestNumber18_dailysum",
