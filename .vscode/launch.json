@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "largestNumber18_dailysum",
+      "request": "launch",
+      "mainClass": "largestNumber18_dailysum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "uncommonwords",
       "request": "launch",
       "mainClass": "uncommonwords",
