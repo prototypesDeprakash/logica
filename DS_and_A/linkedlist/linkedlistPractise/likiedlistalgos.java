@@ -1,9 +1,10 @@
-package linkedlistPractise;
+package linkedlist.linkedlistPractise;
 
 /**
  * likiedlistalgos
  */
-public class likiedlistalgos {
+
+ public class likiedlistalgos {
 
     private static Listnode head;
     private static class Listnode{
@@ -14,6 +15,7 @@ public class likiedlistalgos {
             this.next=null;
 
         }
+    }
 
         //print the node 
 
@@ -43,5 +45,3 @@ public class likiedlistalgos {
 
 
 
-
-}

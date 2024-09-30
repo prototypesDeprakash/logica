@@ -25,7 +25,7 @@ public class maxsumofelement {
             sum+=arr[r]; 
             maxsum=Math.max(maxsum, sum);
 
-
+ 
             
         }
         System.out.println(maxsum);

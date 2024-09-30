@@ -7,7 +7,7 @@ public class TrailingZeros {
         return res;
     }
     public static void main(String[] args) {
-        int n =factorial(25);
+        int n =factorial(5);
         int c=0;
         while (n%10 ==0) {
             c++;

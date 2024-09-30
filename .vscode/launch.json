@@ -3,6 +3,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mergsort2",
+      "request": "launch",
+      "mainClass": "recursion_core.mergsort2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "llpract",
+      "request": "launch",
+      "mainClass": "linkedlist.myllag.llpract",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "likiedlistalgos",
+      "request": "launch",
+      "mainClass": "linkedlist.linkedlistPractise.likiedlistalgos",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "likiedlistalgos$Listnode",
+      "request": "launch",
+      "mainClass": "linkedlist.linkedlistPractise.likiedlistalgos$Listnode",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "leftrotatearray",
+      "request": "launch",
+      "mainClass": "BasicMath.leftrotatearray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "LongestSubstringWithoutRepeatingCharacters",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.LongestSubstringWithoutRepeatingCharacters",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "subarraysumequaltok",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.subarraysumequaltok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "rightrotate",
+      "request": "launch",
+      "mainClass": "Array.rightrotate",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubarraysw",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarraysw",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Trailingzerosalgo",
+      "request": "launch",
+      "mainClass": "Trailingzerosalgo",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "spiralMatrix",
       "request": "launch",
       "mainClass": "matrix.spiralMatrix",

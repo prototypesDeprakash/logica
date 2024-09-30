@@ -1,3 +1,5 @@
+package BasicMath;
+
 public class countdigits {
     public static void main(String[] args) {
         int n =12345;
