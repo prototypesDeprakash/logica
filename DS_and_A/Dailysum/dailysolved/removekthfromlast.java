@@ -1,8 +1,7 @@
-package linkedlist;
+package Dailysum.dailysolved;
 
-
-
-public class llrec {
+public class removekthfromlast {
+    
     private static ListNode head;
     private static class ListNode {
         int data;
@@ -122,22 +121,46 @@ private static void insertend(int n ){
         }
         return l;
     }
+    /*
+    private static ListNode removeratpos(int pos,ListNode head){
+        if(pos==0){
+     // head=currListnode.next;
+     return head.next ;
+     }
+      ListNode currListnode =head;
+     int c=0;
+     ListNode prev = null;
+   
+     while (currListnode != null && c != pos) {
+      prev=currListnode;
+      currListnode=currListnode.next;
+
+      c++;
+     }
+     if (currListnode != null) {
+          prev.next = currListnode.next;
+      }
+      return head;
+  }
+       */
     private static void removeratpos(int pos){
         ListNode currListNode =head;
        int c=0;
        ListNode prev = null;
        if(pos==0){
        
-     //head=currListNode.next;
+    
      return;
        }
-       while (c!=pos) {
+       while (currListNode!=null &&  c!=pos) {
         prev=currListNode;
         currListNode=currListNode.next;
 
         c++;
        }
-       prev.next=currListNode.next;
+       if (currListNode != null) {
+        prev.next = currListNode.next;
+    }
 
     }
 
@@ -153,14 +176,12 @@ private static void insertend(int n ){
 
     public static void main(String[] args) {
       // ListNode head = new ListNode(0);
-       llrec ll =  new llrec();
+    
      
-    //   insertbeg(999);
-     // insertbeg(998);
- //  insertbeg(997);
-      insertend(1);
-      insertbeg(2);
-      insertbeg(999);
+       insertbeg(999);
+       insertbeg(998);
+    //    insertbeg(997);
+    //    insertend(1);
     //    insertend(123);
     //    insertend(321);
     //    insertatpos(3, 0);
@@ -170,7 +191,7 @@ private static void insertend(int n ){
     //    deletebeg();
     //    deleteend();
     //  removeratpos(0);
-     removenthnodefromendd(1);
+     removenthnodefromendd(2);
        //display the current linked list
        display();
 

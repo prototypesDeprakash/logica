@@ -3,6 +3,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "oct_4dividepitoeqteam",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_4dividepitoeqteam",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_3sumofarrdivnyk",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_3sumofarrdivnyk",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "learnhashmap",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.learnhashmap",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_2ranktransform",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_2ranktransform",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removefromend",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.removefromend",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removekthfromlast",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.removekthfromlast",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubarreqtok",
+      "request": "launch",
+      "mainClass": "Array.longestsubarreqtok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_1checkifarrpairsarediv",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_1checkifarrpairsarediv",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "mergsort2",
       "request": "launch",
       "mainClass": "recursion_core.mergsort2",
