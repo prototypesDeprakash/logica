@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "oct_8stackimbalancecount",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_8stackimbalancecount",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "prefixsumbasic",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.prefixsumbasic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubarraywiththegivensum",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarraywiththegivensum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_7minstrlenaftremsub",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_7minstrlenaftremsub",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "string3practise",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.string3practise",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_6String3",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_6String3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_5perumuinstr",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_5perumuinstr",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "oct_4dividepitoeqteam",
       "request": "launch",
       "mainClass": "Dailysum.oct_4dividepitoeqteam",
