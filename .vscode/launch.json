@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "maximumavgsubarray",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarrayproblems.maximumavgsubarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubarrwithsumlessoreqtok",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarrayproblems.longestsubarrwithsumlessoreqtok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "simpleproblem1",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.simpleproblem1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oct_9minaddtomakstackvalid",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_9minaddtomakstackvalid",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "oct_8stackimbalancecount",
       "request": "launch",
       "mainClass": "Dailysum.oct_8stackimbalancecount",
