@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "oct_17maxswap",
+      "request": "launch",
+      "mainClass": "Dailysum.oct_17maxswap",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeclosestnonstarcharacter",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.removeclosestnonstarcharacter",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "maximumavgsubarray",
       "request": "launch",
       "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarrayproblems.maximumavgsubarray",
