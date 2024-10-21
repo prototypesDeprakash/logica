@@ -15,3 +15,34 @@
 
 
      this si an efficient template for sliding windoe
+
+
+     //tow pointer + slicing window for long subarry problems
+     private static void product(int[] arr,int k){
+        int l =0;
+        int r =0;
+        int sum=0;
+        int maxlen=0;
+        int n = arr.length;
+
+        while (r<n) {
+            sum*=arr[r];
+
+            //what if the sum is > than k
+            while (sum>k) {
+                sum-=arr[l];
+                l++;
+
+            }
+
+            if(sum<=k){
+                maxlen=Math.max(maxlen, r-l+1);//we need the length so the formula to find lenth
+                // is sub l  from r and add 1
+
+
+            }
+            r++;
+        }
+        System.out.println(maxlen);
+        
+    }

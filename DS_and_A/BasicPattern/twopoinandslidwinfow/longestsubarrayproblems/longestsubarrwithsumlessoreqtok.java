@@ -25,9 +25,69 @@ public class longestsubarrwithsumlessoreqtok {
         }
         System.out.println(sums+"ans");
     }
+
+
+
+    private static void solution1(int[] arr,int k){
+        int l =0;
+        int r =0;
+        int sum=0;
+        int maxlen=0;
+        int n = arr.length;
+
+        while (r<n) {
+            sum+=arr[r];
+
+            //what if the sum is > than k
+            while (sum>k) { //to optimize change while to if
+                sum-=arr[l];
+                l++;
+
+            }
+
+            if(sum<=k){
+                maxlen=Math.max(maxlen, r-l+1);//we need the length so the formula to find lenth
+                // is sub l  from r and add 1
+
+
+            }
+            r++;
+        }
+        System.out.println(maxlen);
+        
+    }
+    private static void product(int[] arr,int k){
+        int l =0;
+        int r =0;
+        int sum=0;
+        int maxlen=0;
+        int n = arr.length;
+
+        while (r<n) {
+            sum+=arr[r];
+
+            //what if the sum is > than k
+            while (sum>k) {
+                sum-=arr[l];
+                l++;
+
+            }
+
+            if(sum<=k){
+                maxlen=Math.max(maxlen, r-l+1);//we need the length so the formula to find lenth
+                // is sub l  from r and add 1
+
+
+            }
+            r++;
+        }
+        System.out.println(maxlen);
+        
+    }
     public static void main(String[] args) {
-        int[]arr={2,5,1,7,10};
-        int k=8;
-        bruitforce(arr, k);
+        int[]arr={1,2,3,4,5};
+        int k=4;
+        solution1(arr, k);
+        
     }
 }
