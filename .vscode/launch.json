@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longestsubstringwithoutrepeatingchar",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarrayproblems.longestsubstringwithoutrepeatingchar",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maximumpointsobtainfromcard",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.maximumpointsobtainfromcard",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "oct_17maxswap",
       "request": "launch",
       "mainClass": "Dailysum.oct_17maxswap",
