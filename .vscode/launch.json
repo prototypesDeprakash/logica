@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "oop",
+      "request": "launch",
+      "mainClass": "oop",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fruitintobasket",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.fruitintobasket",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "longestsubstringwithoutrepeatingchar",
       "request": "launch",
       "mainClass": "BasicPattern.twopoinandslidwinfow.longestsubarrayproblems.longestsubstringwithoutrepeatingchar",
