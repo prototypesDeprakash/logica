@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "nov1",
+      "request": "launch",
+      "mainClass": "Dailysum.nov1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "countnumberofnicesubarray",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.countnumberofnicesubarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "binarysubarrywithsumequaltok",
+      "request": "launch",
+      "mainClass": "BasicPattern.twopoinandslidwinfow.binarysubarrywithsumequaltok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "oop",
       "request": "launch",
       "mainClass": "oop",
