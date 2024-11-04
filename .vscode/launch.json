@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "nov4b",
+      "request": "launch",
+      "mainClass": "Dailysum.nov4b",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov4",
+      "request": "launch",
+      "mainClass": "Dailysum.nov4",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "novcontest1",
+      "request": "launch",
+      "mainClass": "novcontest1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "nov2",
       "request": "launch",
       "mainClass": "Dailysum.nov2",
