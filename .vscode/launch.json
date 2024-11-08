@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "nov6setbit",
+      "request": "launch",
+      "mainClass": "Dailysum.nov6setbit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeduplicatesdromsortedarr2",
+      "request": "launch",
+      "mainClass": "Dailysum.removeduplicatesdromsortedarr2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "nov4b",
       "request": "launch",
       "mainClass": "Dailysum.nov4b",
