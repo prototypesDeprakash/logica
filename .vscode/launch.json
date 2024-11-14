@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "nov12",
+      "request": "launch",
+      "mainClass": "Dailysum.nov12",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mov11",
+      "request": "launch",
+      "mainClass": "Dailysum.mov11",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "nov10contest",
       "request": "launch",
       "mainClass": "Dailysum.nov10contest",
