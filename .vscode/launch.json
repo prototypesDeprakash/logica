@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "upperbound",
+      "request": "launch",
+      "mainClass": "BinarySearch.upperbound",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "lowerbound",
+      "request": "launch",
+      "mainClass": "BinarySearch.lowerbound",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basicbs",
+      "request": "launch",
+      "mainClass": "BinarySearch.basicbs",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "nov12",
       "request": "launch",
       "mainClass": "Dailysum.nov12",
