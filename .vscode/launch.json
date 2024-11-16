@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ClockAngleCost",
+      "request": "launch",
+      "mainClass": "ClockAngleCost",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "LearningWithClocks",
+      "request": "launch",
+      "mainClass": "LearningWithClocks",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "SnakeAndLadder",
+      "request": "launch",
+      "mainClass": "SnakeAndLadder",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "SegmentIntersection",
+      "request": "launch",
+      "mainClass": "SegmentIntersection",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "upperbound",
       "request": "launch",
       "mainClass": "BinarySearch.upperbound",
