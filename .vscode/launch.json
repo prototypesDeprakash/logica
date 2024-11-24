@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "basicKadanes",
+      "request": "launch",
+      "mainClass": "neetcode_advance_algorithm.kadanes.basicKadanes",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov20",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.nov20",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov19_maxsumof_dist_subarrwithlenK",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.nov19_maxsumof_dist_subarrwithlenK",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "firstandlastocc",
+      "request": "launch",
+      "mainClass": "BinarySearch.firstandlastocc",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov18_defusethebom",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.nov18_defusethebom",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov18_short_subarr_with_sum_k",
+      "request": "launch",
+      "mainClass": "Dailysum.nov18_short_subarr_with_sum_k",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov17",
+      "request": "launch",
+      "mainClass": "Dailysum.nov17",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "ClockAngleCost",
       "request": "launch",
       "mainClass": "ClockAngleCost",
