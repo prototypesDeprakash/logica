@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "dec2",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.dec2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov26",
+      "request": "launch",
+      "mainClass": "Dailysum.nov26",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nov24",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.nov24",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "basicKadanes",
       "request": "launch",
       "mainClass": "neetcode_advance_algorithm.kadanes.basicKadanes",
