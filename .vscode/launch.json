@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "dec4",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.dec4",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dec3",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.dec3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "dec2",
       "request": "launch",
       "mainClass": "Dailysum.dailysolved.December.dec2",
