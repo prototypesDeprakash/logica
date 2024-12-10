@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "dec10",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.dec10",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "dec9",
       "request": "launch",
       "mainClass": "Dailysum.dailysolved.December.dec9",
