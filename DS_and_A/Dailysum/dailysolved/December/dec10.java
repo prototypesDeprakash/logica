@@ -1,4 +1,3 @@
-package Dailysum.dailysolved.December;
 
 import java.util.HashMap;
 

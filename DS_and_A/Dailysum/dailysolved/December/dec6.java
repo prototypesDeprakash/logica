@@ -13,6 +13,6 @@ Explanation: You can choose the integers 2 and 4.
         int[]banned ={1,6,5};
         int n=5;
         int maxsum=6;
-         sol1(banned, n, maxsum);
+        // sol1(banned, n, maxsum);
     }
 }

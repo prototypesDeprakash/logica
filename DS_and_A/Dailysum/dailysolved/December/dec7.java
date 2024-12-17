@@ -1,4 +1,3 @@
-package Dailysum.dailysolved.December;
 
 public class dec7 {
     private static int maxarr(int[]arr){
