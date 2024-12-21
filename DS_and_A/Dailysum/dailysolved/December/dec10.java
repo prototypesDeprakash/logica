@@ -1,4 +1,4 @@
-
+package Dailysum.dailysolved.December;
 import java.util.HashMap;
 
 public class dec10 {

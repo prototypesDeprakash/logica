@@ -1,3 +1,4 @@
+package Dailysum.dailysolved.December;
 public class dec5 {
 
 

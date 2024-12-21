@@ -1,5 +1,5 @@
 
-
+package Dailysum.dailysolved.December;
 public class dec16 {
 
     private static int min_num(int[]arr){

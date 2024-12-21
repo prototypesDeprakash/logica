@@ -1,3 +1,4 @@
+package Dailysum.dailysolved.December;
 import java.util.HashSet;
 
 public class dec6 {

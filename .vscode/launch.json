@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DynamicArray",
+      "request": "launch",
+      "mainClass": "DynamicArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dec20",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.dec20",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dec17",
+      "request": "launch",
+      "mainClass": "dec17",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "dec16",
       "request": "launch",
       "mainClass": "Dailysum.dailysolved.December.dec16",

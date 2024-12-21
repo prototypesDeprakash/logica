@@ -1,6 +1,6 @@
 
 
-
+package Dailysum.dailysolved.December;
 public class dec9 {
 
 
