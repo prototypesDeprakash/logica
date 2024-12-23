@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Recursion",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.Recursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "ListNode3",
       "request": "launch",
       "mainClass": "neetcodeBAsics.ListNode3",
