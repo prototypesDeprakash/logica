@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ListNode3",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.ListNode3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "LinkedList2",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.LinkedList2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "LinkedList",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.LinkedList",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "contest",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.contest",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stackbasic",
+      "request": "launch",
+      "mainClass": "stackbasic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "DynamicArray",
       "request": "launch",
       "mainClass": "DynamicArray",
