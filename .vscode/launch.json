@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LinkedlistMerge",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.LinkedlistMerge",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "Recursion",
       "request": "launch",
       "mainClass": "neetcodeBAsics.Recursion",
