@@ -1,4 +1,4 @@
-package neetcodeBAsics;
+//package neetcodeBAsics;
 
 import BasicPattern.twopoinandslidwinfow.numberofsubstrcontainingall3cahr;
 import recursion_core.fibbonacci;
@@ -80,6 +80,19 @@ public class DoublyLinkedList {
         }
         currentNode.next=newNode;
         newNode.prev=currentNode;
+    }
+    //delete first doublyinkedlist
+    private static void DeleteFirstNodeDoublyLinkedList(){
+        if(head==null){
+            return;
+        }
+        ListNode  cur = head.next;
+        if(cur!=null){//if there is a second node
+            cur.prev=null; //set its prev to null
+        }
+        head.next=null;
+        head=cur;
+
     }
     private static void doubleConnection(){
         head = new ListNode(0);

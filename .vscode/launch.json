@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "noOfStudentsUnabltoeatl",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.noOfStudentsUnabltoeatl",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "DigitSum",
+      "request": "launch",
+      "mainClass": "Skillrack.DigitSum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "DoublyLinkedList",
       "request": "launch",
       "mainClass": "neetcodeBAsics.DoublyLinkedList",
