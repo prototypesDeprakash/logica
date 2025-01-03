@@ -17,8 +17,8 @@ public class noOfStudentsUnabltoeatl {
     private static ListNode tail;
 
 
-    private void addStudentsatback(int n){
-        ListNode newNode  = new ListNode(n);
+    private void addStudentsatback(){
+        ListNode newNode  = head;
         if(head==null){
             head= newNode;
             tail=newNode;
@@ -26,11 +26,46 @@ public class noOfStudentsUnabltoeatl {
             tail.next=newNode;
             tail=newNode;
         }
+        //step 2 is to make the base part of the 
     }
 
+    private static void sol(){
+
+    }
+
+    private static int countSolution(int[]students , int[]sandwiches){
+        //sandwitch is stack
+        //forom students take zero count and one count
+        int zerocount=0;
+        int onecount=0;
+        for(int i=0;i<students.length;i++){
+            if(students[i]==0){
+                zerocount++;
+            }else{
+                onecount++;
+            }
+        }
+        for(int i=0;i<sandwiches.length;i++){
+            if(sandwiches[i]==0 && zerocount!=0){
+                zerocount--;
+            }else if(sandwiches[i]==1 &&onecount!=0){
+                onecount--;
+            }
+            if( sandwiches[i]==0 &&  zerocount==0){
+                return onecount;
+            }
+            if( sandwiches[i]==1 && onecount==0){
+                return zerocount;
+            }
+        }
+        return 0;
+                
+    }
+
+
     private static int normalSOlution(int[] Students, int[]sandwiches){
-        ArrayList<Integer> arr = new ArrayList<>();
-        ArrayList<Integer> sandarr = new ArrayList<>();
+        ArrayList<Integer> arr = new ArrayList<>(); //students
+        ArrayList<Integer> sandarr = new ArrayList<>(); //sandwiches
         for(int i=0;i<sandwiches.length;i++){
             sandarr.add(sandwiches[i]);
         }

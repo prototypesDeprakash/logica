@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "splitarray",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.splitarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "wordandquerry",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.wordandquerry",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "splitthestring1125",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.splitthestring1125",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Contest29dec",
+      "request": "launch",
+      "mainClass": "Dailysum.dailysolved.December.Contest29dec",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "noOfStudentsUnabltoeatl",
       "request": "launch",
       "mainClass": "neetcodeBAsics.noOfStudentsUnabltoeatl",
