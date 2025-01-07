@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringMatchinginanaarray",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.StringMatchinginanaarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "baseballgame",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.baseballgame",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "minnoofoperationtomoveballs",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.minnoofoperationtomoveballs",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "jan4Uniquelength3",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.jan4Uniquelength3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "climbingStairs",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.climbingStairs",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "dynamicprogramming",
       "request": "launch",
       "mainClass": "neetcodeBAsics.dynamicprogramming",
