@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "averagespeed",
+      "request": "launch",
+      "mainClass": "Skillrack.averagespeed",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "countprefixandsufixpair",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.countprefixandsufixpair",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "skillrack",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.skillrack",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "skilleackdaily7jan",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.skilleackdaily7jan",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "StringMatchinginanaarray",
       "request": "launch",
       "mainClass": "Dailysum.jan25.StringMatchinginanaarray",
