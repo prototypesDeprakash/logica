@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CheckIfParenthesiscanbeValid",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.CheckIfParenthesiscanbeValid",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "wordssubset",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.wordssubset",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "averagespeed",
       "request": "launch",
       "mainClass": "Skillrack.averagespeed",
