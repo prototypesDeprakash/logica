@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "prefixcommonarray",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.prefixcommonarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "MinimumLengthofStringAfteroperation",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.MinimumLengthofStringAfteroperation",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "NextGreaterElement",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.NextGreaterElement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "charactersatMultiplesofx",
+      "request": "launch",
+      "mainClass": "Skillrack.charactersatMultiplesofx",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "CheckIfParenthesiscanbeValid",
       "request": "launch",
       "mainClass": "Dailysum.jan25.CheckIfParenthesiscanbeValid",
