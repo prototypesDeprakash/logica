@@ -1,21 +1,210 @@
 .mainPage{
-    background-color: black;
-   width: 500px;
-   height: 500px;
+    background-color: rgb(255, 255, 255);
+    width: auto; /* A4 width */
+    height: 297mm; 
    display: flex;
-   
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+
    position: relative;
    align-items: center;
 
     
 }
+body{
+    background-color: rgb(255, 255, 255);
+}
 .overlay{
-    
-    background-color: rgb(0, 255, 85);
-    width:5px;
-    margin-left: 50px;
-    height: 500px;
-    z-index: 1;
     position: absolute; 
+    background-color: rgb(209, 209, 209);
+    width:350px;
+    margin-left: 30px;
+    height: 534mm;
+    z-index: 0;
   
+}
+.overlay2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute; 
+   
+    background-color: rgb(255, 255, 255);
+    width:720px;
+    margin-left: 380px;
+    height: 534mm;
+    z-index: 0;
+    
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    width: 300mm;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.photoParent{
+    position: relative; /* Set as the parent positioning context */
+    width: 220px; /* Same size as .photo2 */
+    height: 220px;
+    margin-bottom: 750px;
+    margin-left: 90px;
+  
+}
+.photo2 {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%;  /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    border-radius: 50%; 
+    z-index: 2;
+    width: 220px; /* Increase the size slightly for the white background effect */
+    height: 220px;
+    background-color: white;
+}
+
+.photo {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%;  /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    background-image: url('prakash.png');
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    z-index: 3; /* Make sure it's on top of .photo2 */
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(0,108,98,1) ;
+    margin-left: 280px;
+    z-index: 1;
+    
+}
+.name2{
+    margin-left: 280px
+}
+.box2{
+    background-color: rgba(0,108,98,1);
+    width: 300mm;
+    height: 50px;
+    position: absolute;
+   
+    margin-bottom: 711px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 5px;
+    z-index: 2;  
+}
+.box3{
+    position: absolute;
+    background-color: white;
+    width: 310mm;
+    height: 70px;
+    z-index: 1;
+    margin-bottom: 713px;
+}
+
+.profile{
+    margin-bottom: 400px;
+    width: 750px;
+    height: 200px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.projects{
+  
+    width: 750px;
+   
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.aline{
+  position: absolute;
+    
+    width: 750px;
+    height: 2px;
+    margin-top: 70px;
+    background-color: rgb(5, 5, 5);
+}
+.phead{
+    color:rgba(0,108,98,1);
+    font-size: 25px; 
+    font-weight: bold; 
+  
+    line-height: 100px; 
+}
+.projhead{
+    color:rgba(0,108,98,1);
+    font-size: 25px; 
+    font-weight: bold; 
+  
+    line-height: 100px;   
+}
+.pcontent{
+    position: absolute;
+ font-size: 18px;
+ margin-top: 60px;
+}
+.projcontent{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+   
+}
+.proj1{
+    display: flex;
+    flex-direction: column;
+}
+.proj1head{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    color:rgba(0,108,98,1) ;
+    font-weight: 800;
+
+}
+.proj1content{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+
+}
+.p1point1{
+    background-color: rgb(253, 253, 253);
+    font-size: 18px;
+}
+.p1point2{
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+}
+.p1point3{
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+
 }
