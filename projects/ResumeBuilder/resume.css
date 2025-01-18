@@ -12,18 +12,99 @@
 
     
 }
+
 body{
     background-color: rgb(255, 255, 255);
 }
 .overlay{
     position: absolute; 
-    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(210, 210, 210);
     width:350px;
     margin-left: 30px;
-    height: 534mm;
-    z-index: 0;
-  
+    height: 430mm;
+    z-index: 0;  
+    top: 0;
 }
+
+.contact{
+    margin-top: 350px;
+  margin-left: 50px;
+    color:rgba(0,108,98,1);
+    font-size: 25px; 
+    font-weight: bold; 
+}
+.education{
+    margin-top: 160px;
+    margin-left: 50px;
+      color:rgba(0,108,98,1);
+      font-size: 25px; 
+      font-weight: bold; 
+}
+.c-point::before{
+    content: "call";
+    font-family: "Material Icons"; 
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+    color: rgb(76, 76, 76);
+}
+.c-point{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:18px;
+}
+.c-point2::before{
+    content: "email";
+    font-family: "Material Icons"; 
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 5px;
+    color: rgb(76, 76, 76);
+}
+.c-point3::before{
+    content: "location_on";
+    font-family: "Material Icons"; 
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+    color: rgb(76, 76, 76);
+}
+.c-point2{
+     position: absolute;
+    margin-top: 450px;
+    margin-left: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:18px;
+}
+.c-point3{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:18px;
+}
+.aline4{
+    position: absolute;
+    margin-left: 30px;
+    width: 300px;
+    height: 3px;
+    margin-top: 400px;
+    background-color: rgb(115, 115, 115);
+}
+.aline5{
+    position: absolute;
+    margin-left: 30px;
+    width: 300px;
+    height: 3px;
+    margin-top: 590px;
+    background-color: rgb(115, 115, 115);
+}
+
+
 .overlay2{
     display: flex;
     justify-content: center;
@@ -51,8 +132,8 @@ body{
 }
 
 .photoParent{
-    position: relative; /* Set as the parent positioning context */
-    width: 220px; /* Same size as .photo2 */
+    position: relative;
+    width: 220px; 
     height: 220px;
     margin-bottom: 750px;
     margin-left: 90px;
@@ -60,28 +141,28 @@ body{
 }
 .photo2 {
     position: absolute;
-    left: 50%; /* Center horizontally */
-    top: 50%;  /* Center vertically */
-    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%, -50%);
     border-radius: 50%; 
     z-index: 2;
-    width: 220px; /* Increase the size slightly for the white background effect */
+    width: 220px;
     height: 220px;
     background-color: white;
 }
 
 .photo {
     position: absolute;
-    left: 50%; /* Center horizontally */
-    top: 50%;  /* Center vertically */
-    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    left: 50%; 
+    top: 50%;  
+    transform: translate(-50%, -50%); 
     background-image: url('prakash.png');
     background-size: cover;
     border-radius: 50%;
     width: 200px;
     height: 200px;
     background-color: black;
-    z-index: 3; /* Make sure it's on top of .photo2 */
+    z-index: 3; 
 }
 .name{
     font-size: 40px;
@@ -182,7 +263,7 @@ body{
     width: 750px;
     height: 3px;
     margin-top: 70px;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(115, 115, 115);
 }
 .aline2{
     position: absolute;
@@ -190,7 +271,7 @@ body{
     width: 750px;
     height: 3px;
     margin-top: 70px;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(115, 115, 115);
 }
 .aline3{
     position: absolute;
@@ -198,7 +279,7 @@ body{
     width: 750px;
     height: 4px;
     margin-top: 70px;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(115, 115, 115);
 }
 .phead{
     color:rgba(0,108,98,1);
