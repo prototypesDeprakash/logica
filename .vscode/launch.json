@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "optimalPrimeNumber",
+      "request": "launch",
+      "mainClass": "Skillrack.optimalPrimeNumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "trappingRainWater1",
       "request": "launch",
       "mainClass": "Dailysum.jan25.trappingRainWater1",
