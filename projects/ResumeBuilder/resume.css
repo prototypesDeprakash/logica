@@ -288,6 +288,7 @@ body{
  
     line-height: 100px; 
 }
+
 .projhead{
     color:rgba(0,108,98,1);
     font-size: 25px; 
@@ -343,7 +344,7 @@ body{
 }
 
 .p1point1::before{
-    content: "\2022\00A0 ";
+    content: "\2022\00A0";
     background-color: rgb(253, 253, 253);
     
    
