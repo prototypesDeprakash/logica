@@ -20,7 +20,7 @@ text = '''
             }
         } 
         '''
-time.sleep(1)     if (entry.get)
+time.sleep(1)     
 for char in text:
     
     pyautogui.typewrite(char)
