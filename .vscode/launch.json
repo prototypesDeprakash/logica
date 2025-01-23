@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "arrayoflist",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.arrayoflist",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "asciiprogram",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.asciiprogram",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "topkfrequentelement",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.topkfrequentelement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "groupanagrams",
+      "request": "launch",
+      "mainClass": "Dailysum.jan25.groupanagrams",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "spiralmatrix",
       "request": "launch",
       "mainClass": "Dailysum.jan25.spiralmatrix",
