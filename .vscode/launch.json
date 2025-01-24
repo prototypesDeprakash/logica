@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "groupanagrams2",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.groupanagrams2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sortcolor",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.sortcolor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "topkfrequentelement",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.topkfrequentelement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "arrayoflist",
       "request": "launch",
       "mainClass": "Dailysum.jan25.arrayoflist",
