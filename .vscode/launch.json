@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longestconsecutivesequence",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.longestconsecutivesequence",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "validsuduko",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.validsuduko",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "topkfrequentelement2",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.topkfrequentelement2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "groupanagrams2",
       "request": "launch",
       "mainClass": "neetcodeBAsics.groupanagrams2",
