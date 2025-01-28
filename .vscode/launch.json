@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "groupanagrams3",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.groupanagrams3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "twosum2",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.twosum2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "validPalindrom",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.validPalindrom",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "matrixproblems25",
+      "request": "launch",
+      "mainClass": "Skillrack.matrixproblems25",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "longestconsecutivesequence",
       "request": "launch",
       "mainClass": "neetcodeBAsics.longestconsecutivesequence",
