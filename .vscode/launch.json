@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Besttimetobuyandselltocks",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.Besttimetobuyandselltocks",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "containerwithmostwater",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.containerwithmostwater",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "groupanagrams3",
       "request": "launch",
       "mainClass": "neetcodeBAsics.groupanagrams3",
