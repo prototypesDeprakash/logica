@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hollo",
+      "request": "launch",
+      "mainClass": "hollo",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "oneswapisallittakes",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.oneswapisallittakes",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maximumAscendingSubarray",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.maximumAscendingSubarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "strictlyIncreasingordecreasing",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.strictlyIncreasingordecreasing",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestsubstringwithoutrepeatingcharacters",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.longestsubstringwithoutrepeatingcharacters",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "bessttimetobuyandsellstocks",
+      "request": "launch",
+      "mainClass": "neetcodeBAsics.bessttimetobuyandsellstocks",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "Besttimetobuyandselltocks",
       "request": "launch",
       "mainClass": "neetcodeBAsics.Besttimetobuyandselltocks",
