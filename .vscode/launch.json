@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "xpattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.xpattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "ditinct_coloe_amongball",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.ditinct_coloe_amongball",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "ShortestPathRobot",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.ShortestPathRobot",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "ShortestPathPolygon",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.ShortestPathPolygon",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hollo",
+      "request": "launch",
+      "mainClass": "hashmapandarray.hollo",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "anag",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.anag",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumofdig",
+      "request": "launch",
+      "mainClass": "hashmapandarray.sumofdig",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "hollo",
       "request": "launch",
       "mainClass": "hollo",
