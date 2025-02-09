@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "tryhashmapsort",
+      "request": "launch",
+      "mainClass": "javaCollections.tryhashmapsort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "DifferentWaystoIterateOverList",
+      "request": "launch",
+      "mainClass": "javaCollections.DifferentWaystoIterateOverList",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "SortinEmployee",
+      "request": "launch",
+      "mainClass": "javaCollections.SortinEmployee",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basiccollectionsort",
+      "request": "launch",
+      "mainClass": "javaCollections.basiccollectionsort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "collection_use",
+      "request": "launch",
+      "mainClass": "javaCollections.collection_use",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basicmap",
+      "request": "launch",
+      "mainClass": "javaCollections.basicmap",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "collectionbasic",
+      "request": "launch",
+      "mainClass": "javaCollections.collectionbasic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "xpattern",
       "request": "launch",
       "mainClass": "zoho_patterns.xpattern",
