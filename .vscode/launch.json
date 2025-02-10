@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "badpairs",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.badpairs",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "tryhashmapsort",
       "request": "launch",
       "mainClass": "javaCollections.tryhashmapsort",

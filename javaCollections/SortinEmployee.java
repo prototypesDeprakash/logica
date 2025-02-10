@@ -17,7 +17,7 @@ public class SortinEmployee{
         myemployee.add(new Employee(3, "kokiKumar", 19, 50000));
         
         System.out.println(myemployee.get(0).getSalary());
-        Collections.sort(myemployee, new MySort() ); // classic method
+      //  Collections.sort(myemployee, new MySort() ); // classic method
         Collections.sort(myemployee, (e1, e2) -> (int) (e1.getSalary() - e2.getSalary())); //lambds method
         System.out.println(myemployee); //sorted in ascending order
 
