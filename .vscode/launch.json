@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "factorCounter",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.factorCounter",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maxsumofpairwithequalsumofdigit",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.maxsumofpairwithequalsumofdigit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "badpairs",
       "request": "launch",
       "mainClass": "Dailysum.feb.badpairs",
