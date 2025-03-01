@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "prob1",
+      "request": "launch",
+      "mainClass": "Dailysum.march.prob1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "halftriangle",
+      "request": "launch",
+      "mainClass": "halftriangle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "numberofsubarrwithoddsum",
+      "request": "launch",
+      "mainClass": "Dailysum.feb.numberofsubarrwithoddsum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "factorCounter",
       "request": "launch",
       "mainClass": "Dailysum.feb.factorCounter",
