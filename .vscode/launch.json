@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "pivot_partition",
+      "request": "launch",
+      "mainClass": "Dailysum.march.pivot_partition",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "upanddown",
+      "request": "launch",
+      "mainClass": "Dailysum.DigitalBasics.upanddown",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "merge2darray",
+      "request": "launch",
+      "mainClass": "Dailysum.march.merge2darray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "prob1",
       "request": "launch",
       "mainClass": "Dailysum.march.prob1",
