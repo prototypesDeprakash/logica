@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "minimumrecolorstogetkblacks",
+      "request": "launch",
+      "mainClass": "Dailysum.march.minimumrecolorstogetkblacks",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "closestPrimenumberbetweenrange",
+      "request": "launch",
+      "mainClass": "Dailysum.march.closestPrimenumberbetweenrange",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "missingAndRepeatedValues",
+      "request": "launch",
+      "mainClass": "Dailysum.march.missingAndRepeatedValues",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "primeNumber",
       "request": "launch",
       "mainClass": "Dailysum.DigitalBasics.primeNumber",
