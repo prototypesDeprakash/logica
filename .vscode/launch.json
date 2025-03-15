@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "lastdigitofapoewb",
+      "request": "launch",
+      "mainClass": "Dailysum.march.lastdigitofapoewb",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "lowerandupperbound",
+      "request": "launch",
+      "mainClass": "Dailysum.march.lowerandupperbound",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "minimumrecolorstogetkblacks",
       "request": "launch",
       "mainClass": "Dailysum.march.minimumrecolorstogetkblacks",
