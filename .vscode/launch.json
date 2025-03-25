@@ -3,6 +3,90 @@
   "configurations": [
     {
       "type": "java",
+      "name": "rotatearra",
+      "request": "launch",
+      "mainClass": "Dailysum.DigitalBasics.rotatearra",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "findUnique",
+      "request": "launch",
+      "mainClass": "Dailysum.DigitalBasics.findUnique",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "CountDaysWithoutMeetings",
+      "request": "launch",
+      "mainClass": "Dailysum.DigitalBasics.CountDaysWithoutMeetings",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversepower",
+      "request": "launch",
+      "mainClass": "zoho_patterns.reversepower",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "countdigits",
+      "request": "launch",
+      "mainClass": "zoho_patterns.countdigits",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sort3",
+      "request": "launch",
+      "mainClass": "zoho_patterns.sort3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "programmingpattern",
+      "request": "launch",
+      "mainClass": "zoho_patterns.programmingpattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "lastDigitOfaNumber",
+      "request": "launch",
+      "mainClass": "Dailysum.DigitalBasics.lastDigitOfaNumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "dividearrayintotwoequal",
+      "request": "launch",
+      "mainClass": "Dailysum.march.dividearrayintotwoequal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "nearestindes",
+      "request": "launch",
+      "mainClass": "Dailysum.march.nearestindes",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maximumuniquesubarray",
+      "request": "launch",
+      "mainClass": "Dailysum.march.maximumuniquesubarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "houserobber",
+      "request": "launch",
+      "mainClass": "Dailysum.march.houserobber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "lastdigitofapoewb",
       "request": "launch",
       "mainClass": "Dailysum.march.lastdigitofapoewb",
