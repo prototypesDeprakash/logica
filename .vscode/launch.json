@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "aprday1",
+      "request": "launch",
+      "mainClass": "Dailysum.april.aprday1",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "remove_occurences",
       "request": "launch",
       "mainClass": "Dailysum.DigitalBasics.remove_occurences",
