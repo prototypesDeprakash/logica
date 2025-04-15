@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "lcmprogram",
+      "request": "launch",
+      "mainClass": "fucking_basics.lcmprogram",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "gcd",
+      "request": "launch",
+      "mainClass": "fucking_basics.gcd",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "threesum",
+      "request": "launch",
+      "mainClass": "Dailysum.april.threesum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "threesome",
+      "request": "launch",
+      "mainClass": "Dailysum.april.threesome",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "uniqelement_workattech",
+      "request": "launch",
+      "mainClass": "Dailysum.april.uniqelement_workattech",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "tripletsday2",
+      "request": "launch",
+      "mainClass": "Dailysum.april.tripletsday2",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "aprday1",
       "request": "launch",
       "mainClass": "Dailysum.april.aprday1",
