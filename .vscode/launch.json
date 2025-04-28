@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "row_col_to_zero",
+      "request": "launch",
+      "mainClass": "fucking_basics.row_col_to_zero",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "insertionsort",
+      "request": "launch",
+      "mainClass": "fucking_basics.insertionsort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "count_digit",
+      "request": "launch",
+      "mainClass": "fucking_basics.count_digit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "numberline",
+      "request": "launch",
+      "mainClass": "fucking_basics.numberline",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sieveofeeatosthenes",
+      "request": "launch",
+      "mainClass": "fucking_basics.sieveofeeatosthenes",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "lcmprogram",
       "request": "launch",
       "mainClass": "fucking_basics.lcmprogram",
