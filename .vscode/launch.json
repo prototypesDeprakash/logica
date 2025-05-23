@@ -3,6 +3,153 @@
   "configurations": [
     {
       "type": "java",
+      "name": "remdup",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.remdup",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "colorSort",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.colorSort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "zerotoend",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.zerotoend",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "twoSumOptimal",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.twoSumOptimal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "kadanes_also",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.kadanes_also",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "rightRotateArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.rightRotateArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "leftrotatektimes",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.leftrotatektimes",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "leftrotateArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.leftrotateArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversingAnarray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.reversingAnarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "frequencymap",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.frequencymap",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "understanding",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.understanding",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "moveZerostoEnd",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.moveZerostoEnd",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeDuplicatesFromSortedArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.removeDuplicatesFromSortedArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "checkifarrayissorted",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.checkifarrayissorted",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "SecondLargestElement",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.SecondLargestElement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "largestorsmallestnumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.largestorsmallestnumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "icecream",
+      "request": "launch",
+      "mainClass": "icecream",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversestring",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.reversestring",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "hashmapBasics",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.hashmapBasics",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "may3",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.may3",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "row_col_to_zero",
       "request": "launch",
       "mainClass": "fucking_basics.row_col_to_zero",
