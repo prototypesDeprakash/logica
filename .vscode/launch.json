@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "findDuplicatenumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.findDuplicatenumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergeIntrvals",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.mergeIntrvals",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "subarraysumequaltok",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.subarraysumequaltok",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sortColors",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.sortColors",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "remdup",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.array_and_string.remdup",
