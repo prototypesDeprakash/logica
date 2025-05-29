@@ -3,6 +3,139 @@
   "configurations": [
     {
       "type": "java",
+      "name": "fibbonaciSeries",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.DynamicProgramming.fibbonaciSeries",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "firstnonrepeating",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.firstnonrepeating",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "printDigitOfaNumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.printDigitOfaNumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumOfElementsInArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.sumOfElementsInArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumofnNaturalNumbers",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.sumofnNaturalNumbers",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "noOfbacteria",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.noOfbacteria",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "asciishit",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.asciishit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stringmanipulation",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.stringmanipulation",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reversearray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.reversearray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "fibbo",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.fibbo",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "factorialOfnumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.factorialOfnumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "sumofNnumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.sumofNnumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "palindrom",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.palindrom",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reverseString",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.reverseString",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "understandingrecursion",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.tire1_recursion.understandingrecursion",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "groupAnagrams",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.groupAnagrams",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "stringreversal",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.stringreversal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "floids_duplicate",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.floids_duplicate",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mergesortRecall",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.array_and_string.mergesortRecall",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "findDuplicatenumber",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.array_and_string.findDuplicatenumber",
