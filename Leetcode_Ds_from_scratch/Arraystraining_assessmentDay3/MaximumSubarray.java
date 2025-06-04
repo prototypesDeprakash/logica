@@ -1,4 +1,4 @@
-package Leetcode_Ds_from_scratch.Arrays;
+package Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3;
 
 public class MaximumSubarray {
 
