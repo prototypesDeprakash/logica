@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "secondLargestElement",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.secondLargestElement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basics_arr",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.basics_arr",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basicsArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.basicsArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "arrayBasics",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.arrayBasics",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "ArrayBasics",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.ArrayBasics",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "containsDuplicate",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.containsDuplicate",
