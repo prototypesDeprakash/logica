@@ -27,7 +27,8 @@ public class trailingZeros {
     }
     public static void main(String[] args) {
         int n=10;
-        System.out.println(trailingZeros(n));
-        System.out.println(Optimal_Solution(1000));
+     //   System.out.println(trailingZeros(n));
+        System.out.println(Optimal_Solution(6));
+        System.out.println();
     }
 }

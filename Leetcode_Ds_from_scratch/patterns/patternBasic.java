@@ -1,8 +1,50 @@
 package Leetcode_Ds_from_scratch.patterns;
 
 public class patternBasic {
+ private static void spiralMatrix(int n){ // without 2d array
+      
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            int layer = Math.min(Math.min(i, j), Math.min(n - 1 - i, n - 1 - j));
+            int start = layer;
+            int end = n - 1 - layer;
 
-    private static void printline(){
+            // Count numbers before current layer
+            int countBeforeLayer = 0;
+            for (int l = 0; l < layer; l++) {
+                int sideLength = n - 2 * l;
+                if (sideLength == 1) {
+                    countBeforeLayer += 1;
+                } else {
+                    countBeforeLayer += 4 * (sideLength - 1);
+                }
+            }
+
+            int offset = 0;
+            if (i == start) {
+                // top row
+                offset = j - start;
+            } else if (j == end) {
+                // right column
+                offset = (end - start) + (i - start);
+            } else if (i == end) {
+                // bottom row
+                offset = 2 * (end - start) + (end - j);
+            } else {
+                // left column
+                offset = 3 * (end - start) + (end - i);
+            }
+
+            int value = countBeforeLayer + offset + 1;
+            System.out.printf("%3d ", value);
+        }
+        System.out.println();
+    
+}
+
+ }
+   
+ private static void printline(){
         System.out.println("-----------------------------------------------");
     }
     private static void SquarePattern1(int n){
@@ -74,49 +116,21 @@ public class patternBasic {
             System.out.println();
         }
     }
+    private static void LeftAngleTriange(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i-1;j++){
 
-    private static void spiralMatrix(int n){
-      
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            int layer = Math.min(Math.min(i, j), Math.min(n - 1 - i, n - 1 - j));
-            int start = layer;
-            int end = n - 1 - layer;
-
-            // Count numbers before current layer
-            int countBeforeLayer = 0;
-            for (int l = 0; l < layer; l++) {
-                int sideLength = n - 2 * l;
-                if (sideLength == 1) {
-                    countBeforeLayer += 1;
-                } else {
-                    countBeforeLayer += 4 * (sideLength - 1);
-                }
+               System.out.print(" ");
+            }
+            for(int k=0;k<i+1;k++){
+                System.out.print("*");
             }
 
-            int offset = 0;
-            if (i == start) {
-                // top row
-                offset = j - start;
-            } else if (j == end) {
-                // right column
-                offset = (end - start) + (i - start);
-            } else if (i == end) {
-                // bottom row
-                offset = 2 * (end - start) + (end - j);
-            } else {
-                // left column
-                offset = 3 * (end - start) + (end - i);
-            }
-
-            int value = countBeforeLayer + offset + 1;
-            System.out.printf("%3d ", value);
-        }
         System.out.println();
-    
-}
-
+            
+        }
     }
+   
     public static void main(String[] args) {
     //    SquarePattern1(5);
     //    printline();
@@ -125,13 +139,19 @@ public class patternBasic {
     //    rightAngleTriange(10);
     //    rightAngleHollowTriange(10);
     //    zeroOneFiller(5);
-    spiralMatrix(5);
+    //    spiralMatrix(5);
 
-
-
+    LeftAngleTriange(10);
+    int c =3;
+    System.out.println(Integer.hashCode(111));
+        
 
 
 
     }
 
+
 }
+
+
+

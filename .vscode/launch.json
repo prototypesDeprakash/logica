@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MaximumSubarray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arrays.MaximumSubarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "isPrimeNumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Mathematics.isPrimeNumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "leastCommonDivisor",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Mathematics.leastCommonDivisor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reatestCommonDivisor",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Mathematics.reatestCommonDivisor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "SinglyLinkedList",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.linkedlist.SinglyLinkedList",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "patternBasic",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.patterns.patternBasic",
