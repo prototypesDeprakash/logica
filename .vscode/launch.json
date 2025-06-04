@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "twosum",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.twosum",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "MaximumSubarray",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.MaximumSubarray",
