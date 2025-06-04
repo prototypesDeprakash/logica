@@ -1,4 +1,4 @@
-package Skillrack;
+package Shit_Skillrack;
 
 public class stringpoints {
 

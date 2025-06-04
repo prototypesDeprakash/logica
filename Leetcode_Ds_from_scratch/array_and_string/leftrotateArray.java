@@ -1,6 +1,6 @@
 package Leetcode_Ds_from_scratch.array_and_string;
 
-import Skillrack.display;
+import Shit_Skillrack.display;
 
 public class leftrotateArray {
 

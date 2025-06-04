@@ -1,4 +1,4 @@
-package Skillrack;
+package Shit_Skillrack;
 
 public class display {
     public static void display2D(int[][] arr) {

@@ -3,7 +3,7 @@ package Dailysum.DigitalBasics;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import Skillrack.display;
+import Shit_Skillrack.display;
 
 public class CountDaysWithoutMeetings {
 

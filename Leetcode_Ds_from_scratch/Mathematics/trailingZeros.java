@@ -1,6 +1,6 @@
 package Leetcode_Ds_from_scratch.Mathematics;
 
-import Skillrack.optimalPrimeNumber;
+import Shit_Skillrack.optimalPrimeNumber;
 
 public class trailingZeros {
 

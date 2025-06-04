@@ -2,7 +2,7 @@ package Dailysum.march;
 
 import java.util.HashSet;
 
-import Skillrack.display;
+import Shit_Skillrack.display;
 
 public class missingAndRepeatedValues {
     private static int[][] sol1(int [][]arr){

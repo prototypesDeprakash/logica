@@ -1,6 +1,6 @@
 package fucking_basics;
 
-import Skillrack.display;
+import Shit_Skillrack.display;
 
 public class numberline {
 

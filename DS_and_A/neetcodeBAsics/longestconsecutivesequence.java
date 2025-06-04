@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import BasicMath.countdigits;
-import Skillrack.matrixproblems25;
+import Shit_Skillrack.matrixproblems25;
 import neetcodeBAsics.display;
 
 public class longestconsecutivesequence {

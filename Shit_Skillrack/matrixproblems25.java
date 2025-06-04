@@ -1,10 +1,11 @@
-package Skillrack;
+package Shit_Skillrack;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Scanner;
-import Skillrack.display;
+
+import Shit_Skillrack.display;
 public class matrixproblems25 {
 
     private static void display(String[][]arr){

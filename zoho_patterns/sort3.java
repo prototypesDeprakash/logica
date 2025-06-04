@@ -1,6 +1,6 @@
 package zoho_patterns;
 
-import Skillrack.display;
+import Shit_Skillrack.display;
 
 public class sort3 {
 
