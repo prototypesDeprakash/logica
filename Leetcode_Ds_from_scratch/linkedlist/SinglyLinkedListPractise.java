@@ -54,5 +54,6 @@ private static void Insert_end(int data){
             Insert_end(99);
             Insert_Begining(88);
             display_nodes();
+            
     }
 }                                                                           
