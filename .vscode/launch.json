@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "deleteKthnode",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.linkedlist.deleteKthnode",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "findmiddle",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.linkedlist.findmiddle",
