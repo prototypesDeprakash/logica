@@ -1,7 +1,7 @@
 package Leetcode_Ds_from_scratch.linkedlist;
 
-public class findmiddle {
-      static class ListNode{
+public class reverseSll {
+  static class ListNode{
         int data;
         ListNode next;
         ListNode(int data){
@@ -27,7 +27,18 @@ private static void Insert_end(int data){
     
     
 }
-
+//reverse 
+private static void reverseList(){
+    ListNode prev = null;
+    ListNode cur = head;
+    while (cur!=null) {
+        ListNode next = cur.next;
+        cur.next=prev;
+        prev=cur;
+        cur=next;
+    }
+    head=prev;
+}
 
     private  static void display_nodes(){
         ListNode currListNode =head;
@@ -38,27 +49,8 @@ private static void Insert_end(int data){
         System.out.println("Null");
     }
 
-    //tortoise heir method
 
-    private static void findMiddleNode(){
-        if(head==null) return;
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast!=null && fast.next!=null) {
-            slow=slow.next;
-            fast=fast.next.next;
-        }
-        System.out.print("Middle Emement is: "+slow.data);
-    }
-    public static void main(String[] args) {
-        findmiddle fm = new findmiddle();
-        fm.Insert_Begining(10);
-        fm.Insert_Begining(20);
-        fm.Insert_Begining(30);
-        fm.Insert_Begining(40);
-        fm.Insert_Begining(50);
-        fm.Insert_Begining(50);
-        fm.display_nodes();
-        fm.findMiddleNode();
-    }
+public static void main(String[] args) {
+    
+}
 }
