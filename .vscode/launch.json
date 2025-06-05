@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SinglyLinkedListPractise",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.linkedlist.SinglyLinkedListPractise",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "productOfArrayExceptItself",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.productOfArrayExceptItself",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "bestTimeTOBuyAndSell",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.bestTimeTOBuyAndSell",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "greatestCommonDivisor",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Mathematics.greatestCommonDivisor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "moveZerostoEnd",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.moveZerostoEnd",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeDuplicatesFromSortedarray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.removeDuplicatesFromSortedarray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "reverseAnArray",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.reverseAnArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "secondLargestElement",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.secondLargestElement",
