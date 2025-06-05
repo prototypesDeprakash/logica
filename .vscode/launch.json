@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "search2dMatrix",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.search2dMatrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "transposeOfMatrix",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.transposeOfMatrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "longestCommonPrefix",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.longestCommonPrefix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "validAnagram",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.day4assignment.validAnagram",

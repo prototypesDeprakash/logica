@@ -1,4 +1,4 @@
-package Leetcode_Ds_from_scratch.Stack_Ds;
+package Leetcode_Ds_from_scratch.day4assignment;
 
 import java.util.Stack;
 
