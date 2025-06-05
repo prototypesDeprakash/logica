@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "validAnagram",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.validAnagram",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "missingNumber",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.missingNumber",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "movezerosAgain",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.day4assignment.movezerosAgain",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "moveZerosPractise",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3.moveZerosPractise",
