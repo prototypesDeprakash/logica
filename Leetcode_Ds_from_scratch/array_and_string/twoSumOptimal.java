@@ -2,7 +2,7 @@ package Leetcode_Ds_from_scratch.array_and_string;
 
 import java.util.HashMap;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class twoSumOptimal {
 

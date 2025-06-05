@@ -1,4 +1,4 @@
-package fucking_basics;
+package fu_basics;
 
 public class count_digit {
 

@@ -1,4 +1,4 @@
-package fucking_basics;
+package fu_basics;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package Leetcode_Ds_from_scratch.array_and_string;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class colorSort {
     public static void main(String[] args) {

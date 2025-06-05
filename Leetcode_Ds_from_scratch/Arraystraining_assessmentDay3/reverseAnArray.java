@@ -1,7 +1,7 @@
 package Leetcode_Ds_from_scratch.Arraystraining_assessmentDay3;
 
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class reverseAnArray {
 

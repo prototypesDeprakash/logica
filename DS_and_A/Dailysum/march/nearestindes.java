@@ -1,6 +1,6 @@
 package Dailysum.march;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class nearestindes {
 

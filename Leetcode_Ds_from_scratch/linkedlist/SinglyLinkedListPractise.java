@@ -2,7 +2,7 @@ package Leetcode_Ds_from_scratch.linkedlist;
 
 import java.util.List;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class SinglyLinkedListPractise {
     static class ListNode{

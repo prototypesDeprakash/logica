@@ -1,7 +1,7 @@
 package Leetcode_Ds_from_scratch.array_and_string;
 
 import Dailysum.jan25.asteroidcollision;
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class removeDuplicatesFromSortedArray {
 

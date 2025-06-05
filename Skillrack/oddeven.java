@@ -1,4 +1,4 @@
-package Shit_Skillrack;
+package Skillrack;
 
 import java.util.ArrayList;
 import java.util.Collections;

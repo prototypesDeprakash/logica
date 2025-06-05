@@ -1,6 +1,6 @@
 package Leetcode_Ds_from_scratch.tire1_recursion;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class reversearray {
 

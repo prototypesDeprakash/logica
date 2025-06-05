@@ -1,6 +1,6 @@
 package Dailysum.march;
 
-import Shit_Skillrack.matrixproblems25;
+import Skillrack.matrixproblems25;
 
 public class houserobber {
 

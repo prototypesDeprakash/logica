@@ -1,6 +1,6 @@
 package Leetcode_Ds_from_scratch.DynamicProgramming;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
 public class fibbonaciSeries {
 

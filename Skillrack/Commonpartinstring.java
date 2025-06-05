@@ -1,4 +1,4 @@
-package Shit_Skillrack;
+package Skillrack;
 
 public class Commonpartinstring {
     private static void sol1(String s1 , String s2){

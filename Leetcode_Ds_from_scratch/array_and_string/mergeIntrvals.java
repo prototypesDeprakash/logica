@@ -4,7 +4,7 @@
     import java.util.Arrays;
 import java.util.List;
 
-import Shit_Skillrack.display;
+import Skillrack.display;
 
     public class mergeIntrvals {
 
