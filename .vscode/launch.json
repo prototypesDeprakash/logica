@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "findmiddle",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.linkedlist.findmiddle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "search2dMatrix",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.day4assignment.search2dMatrix",
