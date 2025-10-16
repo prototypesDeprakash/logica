@@ -3,6 +3,111 @@
   "configurations": [
     {
       "type": "java",
+      "name": "rotatematrix",
+      "request": "launch",
+      "mainClass": "NQT_pREPARATION.rotatematrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "countofashandstar",
+      "request": "launch",
+      "mainClass": "NQT_pREPARATION.countofashandstar",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "ClosestLEDTime",
+      "request": "launch",
+      "mainClass": "s13codeVita.ClosestLEDTime",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "maxfrequenct22_09_2025",
+      "request": "launch",
+      "mainClass": "maxfrequenct22_09_2025",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "freqcount",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.freqcount",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "insertionsort",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.insertionsort",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basic",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.basic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "copyConstructor",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.copyConstructor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "While",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.While",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "CONSTRUCTORcalls",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.CONSTRUCTORcalls",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "supertest",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.supertest",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "abstractstudy",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.abstractstudy",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "condit",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.condit",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "outppred",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.javaOutputPrediction.outppred",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "pascalsTriangle",
+      "request": "launch",
+      "mainClass": "Leetcode_Ds_from_scratch.zohoquestion.pascalsTriangle",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "deleteKthnode",
       "request": "launch",
       "mainClass": "Leetcode_Ds_from_scratch.linkedlist.deleteKthnode",
