@@ -1,0 +1,6 @@
+Order_ID,Supplier,Product,Quantity,Warehouse,Order_Date
+101,Supplier A,Steel,500,WH1,2025-01-10
+102,Supplier B,Aluminum,300,WH2,2025-01-12
+103,Supplier A,Steel,700,WH1,2025-01-15
+104,Supplier C,Copper,200,WH3,2025-01-18
+105,Supplier B,Aluminum,450,WH2,2025-01-20

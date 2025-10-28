@@ -1,0 +1,6 @@
+Date,Factory,Product,Units_Produced,Defective_Units,Shift
+01-01-2025,Factory A,Widget,1000,25,Morning
+01-01-2025,Factory B,Gadget,1500,15,Evening
+02-01-2025,Factory A,Widget,1200,30,Night
+02-01-2025,Factory B,Widget,1100,20,Morning
+03-01-2025,Factory A,Gadget,900,10,Evening
