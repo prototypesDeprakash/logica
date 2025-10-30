@@ -8,4 +8,4 @@ data ={
 df = pd.DataFrame(data)
 df['CTR']=(df['Clicks']/df['impression']) *100
 
-print(df)
+print(df)   

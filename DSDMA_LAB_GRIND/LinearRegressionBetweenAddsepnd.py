@@ -7,7 +7,7 @@ data = {
         'Revenue':[3000,5000,7000,9000]
         }
 df=pd.DataFrame(data)
-print(df)
+print(df)       
 
 x=df[['AdSpend']]
 y=df['Revenue']
