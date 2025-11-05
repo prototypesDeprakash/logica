@@ -3,6 +3,97 @@
   "configurations": [
     {
       "type": "java",
+      "name": "studentarrangement",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.studentarrangement",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "removeAdjacent",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.removeAdjacent",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "MinimumTimeTocolor",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.MinimumTimeTocolor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "mintimtocolor",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.mintimtocolor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "minimumTimeTomakeRopeColourful",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.minimumTimeTomakeRopeColourful",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "deletenodefromLinkedList",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.deletenodefromLinkedList",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "keyboardsimulator",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.keyboardsimulator",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Gembreaker",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.Gembreaker",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "transposeofamatrix",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.transposeofamatrix",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "bordertraversal",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.bordertraversal",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "matrixSnakePattern",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.matrixSnakePattern",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "minimumTimeVisitingALlpoints",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.minimumTimeVisitingALlpoints",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "array_min_max_basic",
+      "request": "launch",
+      "mainClass": "DSARestart_TCS_PRep.array_min_max_basic",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "rotatematrix",
       "request": "launch",
       "mainClass": "NQT_pREPARATION.rotatematrix",
