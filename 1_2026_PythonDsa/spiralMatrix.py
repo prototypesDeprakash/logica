@@ -3,38 +3,38 @@ matrix  =[[1,2,3],
           [7,8,9]]
 
 
-top =0
-bottom = len(matrix)-1
-left =0
-right = len(matrix[0])-1
+# top =0
+# bottom = len(matrix)-1
+# left =0
+# right = len(matrix[0])-1
 
-'''
+# '''
 
-l->r 
-t->b
-r->l
-b->t
+# l->r 
+# t->b
+# r->l
+# b->t
 
-'''
-# core idea
+# '''
+# # core idea
 
-while True:
-    if(left>right or top> bottom):
-        break
+# while True:
+#     if(left>right or top> bottom):
+#         break
 
 
-    for  i in range(left,right+1):
-        print(matrix[top][i] , end =" ")
-    top+=1
-    for i in range(top,bottom+1):
-        print(matrix[i][right] , end =" ")
-    right-=1
-    for i in range(right,left-1,-1):
-        print(matrix[bottom][i],end=" ")
-    bottom-=1
-    for i in range(bottom,top-1,-1):
-        print(matrix[i][left],end=" ")
-    left+=1
+#     for  i in range(left,right+1):
+#         print(matrix[top][i] , end =" ")
+#     top+=1
+#     for i in range(top,bottom+1):
+#         print(matrix[i][right] , end =" ")
+#     right-=1
+#     for i in range(right,left-1,-1):
+#         print(matrix[bottom][i],end=" ")
+#     bottom-=1
+#     for i in range(bottom,top-1,-1):
+#         print(matrix[i][left],end=" ")
+#     left+=1
 
 # correct logic
 
@@ -73,4 +73,4 @@ class Solution:
                     res.append(matrix[i][left])
                 left+=1
         return res
-print(Solution.spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]]))
+print(Solution.spiralOrder([[1,2,3],[4,5,6],[7,8,9]]))
