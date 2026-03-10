@@ -1,12 +1,14 @@
-arr=[1,2,3,1,2]
-k=3
+arr = [1,2,3,1,2,3]
+k = 2
 
 
-def sol1():
-    for i in range(0,len(arr)):
-        for j in range(0,len(arr)):
-            if(i!=j and arr[i]==arr[j] and k==abs(i-j)):
-                return True
+
+def  hashingSolution():
+    hashmap={}
+    for index , number in enumerate(arr):
+        if(number in hashmap and abs(hashmap[number]-index)<=k):
+            return True
+        else:
+            hashmap[number]=index
     return False
-
-print(sol1())
+print(hashingSolution())
