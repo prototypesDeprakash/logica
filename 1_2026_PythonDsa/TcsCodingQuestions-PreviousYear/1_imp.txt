@@ -1,0 +1,6 @@
+Topic Category 	Specific Problems to Master
+Arrays	Rotate by K, Move Zeros, Kadane's Algo, Frequency Count
+Strings	Anagram Search, Palindrome Check, ASCII conversions
+Math	GCD, Prime Sieve, Base Conversion (Dec 
+ Bin)
+Advanced	0/1 Knapsack, Permutations of String, Matrix Spiral Print
