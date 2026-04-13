@@ -18,7 +18,7 @@ import argparse
 
 class KosmiScanner:
     def __init__(self, workers=15, delay=0.1, length=5, limit=100000):
-        self.base_url = "https://app.kosmi.io/room/"
+        self.base_url = "https://app.kosmi.io/qf8juv/"
         self.chars = string.ascii_lowercase + string.digits
         self.session = requests.Session()
         self.session.headers.update({

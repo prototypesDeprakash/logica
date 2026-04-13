@@ -74,5 +74,6 @@
     "concepts": "cpp",
     "xutility": "cpp"
   },
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }
