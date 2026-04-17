@@ -75,5 +75,6 @@
     "xutility": "cpp"
   },
   "java.debug.settings.onBuildFailureProceed": true,
-  "python-envs.defaultEnvManager": "ms-python.python:system"
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "search.useGlobalIgnoreFiles": true
 }

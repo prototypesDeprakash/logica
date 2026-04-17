@@ -9,4 +9,5 @@ while(len(arr)!=1):
         inc=inc%len(arr)
     arr.remove(arr[inc])
     inc=inc+(k-1)
+
 print(arr[0])

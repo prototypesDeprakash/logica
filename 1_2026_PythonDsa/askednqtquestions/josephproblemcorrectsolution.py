@@ -7,4 +7,4 @@ while len(arr) != 1:
     inc = (inc + k - 1) % len(arr)
     arr.pop(inc)
 
-print(arr[0])
+print(arr)
