@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "manyconstructor",
+      "request": "launch",
+      "mainClass": "manyconstructor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "defaultconstructor",
+      "request": "launch",
+      "mainClass": "defaultconstructor",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "classandobj",
+      "request": "launch",
+      "mainClass": "classandobj",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "frequencyofarra",
+      "request": "launch",
+      "mainClass": "frequencyofarra",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "basicsagain",
+      "request": "launch",
+      "mainClass": "basicsagain",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "typeingTimeCalculator",
       "request": "launch",
       "mainClass": "DSARestart_TCS_PRep.cracking1stprogram.numberbased.typeingTimeCalculator",
