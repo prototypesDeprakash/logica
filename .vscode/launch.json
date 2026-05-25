@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "abstractmethodexampleinjava",
+      "request": "launch",
+      "mainClass": "abstractmethodexampleinjava",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "constructoroverloadingexample",
+      "request": "launch",
+      "mainClass": "constructoroverloadingexample",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "superexamp",
+      "request": "launch",
+      "mainClass": "superexamp",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "manyconstructor",
       "request": "launch",
       "mainClass": "manyconstructor",

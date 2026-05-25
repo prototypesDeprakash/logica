@@ -2,6 +2,10 @@ public class superexamp {
     superexamp(){
         System.out.println("Parent class called");
     }
+
+    public static void main(String[] args) {
+        child c = new child();
+    }
 }
 class child extends superexamp{
     child(){
@@ -9,3 +13,4 @@ class child extends superexamp{
         System.out.println("Child class called");
     }
 }
+
