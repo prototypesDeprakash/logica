@@ -25,11 +25,36 @@ class Developer(Employee):
         # Employee.__init__(self,first,last,pay)  both of these methods work
         self.prog_lang=prog_lang
 
-
-        
+class Manager(Employee):
+    def __init__(self, first, last, pay,employees=None):
+        super().__init__(first, last, pay)
+        if(employees is None):
+            self.employees=[]
+        else:
+            self.employees = employees
+    def add_emp(self, emp):
+        if emp  not in self.employees:
+            self.employees.append(emp)
+    def add_remove_emp(self,emp):
+        if(emp in self.employees):
+            self.employees.remove(emp)
+    def print_employees(self):
+        for employee in self.employees:
+            print('---> ',employee.fullname())
 
 dev1=Developer('Prakash','raj',50000,'java')
 
 dev2=Developer('test','developer',50000,'Python')
 
-print(dev1.prog_lang)
+mgr_1=Manager('sue','Heck',90000,[dev1])
+print(mgr_1.email)
+mgr_1.add_emp(dev2)
+print(mgr_1.print_employees())
+
+print(isinstance(mgr_1,Manager))
+print(isinstance(mgr_1,Employee))
+print(isinstance(mgr_1,Developer))
+print(issubclass(Manager,Employee))
+print(issubclass(Manager,Developer))
+
+
