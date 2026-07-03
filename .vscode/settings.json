@@ -75,6 +75,7 @@
     "xutility": "cpp"
   },
   "java.debug.settings.onBuildFailureProceed": true,
-  "python-envs.defaultEnvManager": "ms-python.python:system",
-  "search.useGlobalIgnoreFiles": true
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "search.useGlobalIgnoreFiles": true,
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
 }

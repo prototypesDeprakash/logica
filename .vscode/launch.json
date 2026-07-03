@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mainmethod",
+      "request": "launch",
+      "mainClass": "JavaFundaMentalsProject.Calculator.mainmethod",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "abstractmethodexampleinjava",
       "request": "launch",
       "mainClass": "abstractmethodexampleinjava",
