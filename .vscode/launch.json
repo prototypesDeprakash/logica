@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "question1prep",
+      "request": "launch",
+      "mainClass": "javaoops.question1prep",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "Solution",
+      "request": "launch",
+      "mainClass": "javaoops.wordCounter.Solution",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "courseProgram",
+      "request": "launch",
+      "mainClass": "javaoops.courseManager.courseProgram",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "mainmethod",
       "request": "launch",
       "mainClass": "JavaFundaMentalsProject.Calculator.mainmethod",
