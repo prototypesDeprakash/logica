@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CreatingAnArray",
+      "request": "launch",
+      "mainClass": "A_Product_company_prep.HowToArray.CreatingAnArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
+      "name": "CreatingAnArray",
+      "request": "launch",
+      "mainClass": "CreatingAnArray",
+      "projectName": "logica_bbe493a1"
+    },
+    {
+      "type": "java",
       "name": "question1prep",
       "request": "launch",
       "mainClass": "javaoops.question1prep",
