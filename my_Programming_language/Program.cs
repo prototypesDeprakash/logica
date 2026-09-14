@@ -1,9 +1,22 @@
 ﻿using Antlr4.Runtime;
 
 string code = """
-move();
-turnLeft();
-harvest();
+int x = 0;
+
+while (x < 5) {
+    move();
+    x++;
+}
+
+if (x > 4) {
+    harvest();
+} else {
+    turnLeft();
+}
+
+for (int i = 0; i < 3; i++) {
+    move();
+}
 """;
 
 Console.WriteLine("SOURCE:");
