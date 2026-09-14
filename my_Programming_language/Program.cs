@@ -1,42 +1,29 @@
 ﻿using Antlr4.Runtime;
 
-string code = """
-int x = 0;
+string filePath = "program.prakash";
 
-while (x < 5) {
-    move();
-    x++;
+if (!File.Exists(filePath))
+{
+    Console.WriteLine("program.prakash not found.");
+    return;
 }
 
-if (x > 4) {
-    harvest();
-} else {
-    turnLeft();
-}
+string code = File.ReadAllText(filePath);
 
-for (int i = 0; i < 3; i++) {
-    move();
-}
-""";
-
-Console.WriteLine("SOURCE:");
+Console.WriteLine("===== CODE =====");
 Console.WriteLine(code);
 Console.WriteLine();
 
-// Create ANTLR input
 AntlrInputStream input = new AntlrInputStream(code);
 
-// Lexer
 SimpleLexer lexer = new SimpleLexer(input);
 
-// Tokens
 CommonTokenStream tokens = new CommonTokenStream(lexer);
 
-// Parser
 SimpleParser parser = new SimpleParser(tokens);
 
-// Parse
 SimpleParser.ProgramContext tree = parser.program();
 
-Console.WriteLine("PARSE TREE:");
-Console.WriteLine(tree.ToStringTree(parser));
+GameInterpreter interpreter = new GameInterpreter();
+
+interpreter.Visit(tree);

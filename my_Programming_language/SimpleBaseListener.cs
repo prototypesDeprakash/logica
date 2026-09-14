@@ -60,6 +60,30 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitLine([NotNull] SimpleParser.LineContext context) { }
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterFunctionDeclaration([NotNull] SimpleParser.FunctionDeclarationContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitFunctionDeclaration([NotNull] SimpleParser.FunctionDeclarationContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.accessModifier"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterAccessModifier([NotNull] SimpleParser.AccessModifierContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.accessModifier"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitAccessModifier([NotNull] SimpleParser.AccessModifierContext context) { }
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.statement"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
@@ -84,6 +108,30 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitVariableDeclaration([NotNull] SimpleParser.VariableDeclarationContext context) { }
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterType([NotNull] SimpleParser.TypeContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.type"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitType([NotNull] SimpleParser.TypeContext context) { }
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.assignment"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
@@ -96,6 +144,18 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitAssignment([NotNull] SimpleParser.AssignmentContext context) { }
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context) { }
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.functionCall"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
@@ -107,6 +167,30 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitFunctionCall([NotNull] SimpleParser.FunctionCallContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.printStatement"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterPrintStatement([NotNull] SimpleParser.PrintStatementContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.printStatement"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitPrintStatement([NotNull] SimpleParser.PrintStatementContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.ifBlock"/>.
 	/// <para>The default implementation does nothing.</para>
@@ -168,30 +252,6 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitForUpdate([NotNull] SimpleParser.ForUpdateContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context) { }
-	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.increment"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
@@ -215,18 +275,6 @@ public partial class SimpleBaseListener : ISimpleListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitDecrement([NotNull] SimpleParser.DecrementContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.block"/>.
 	/// <para>The default implementation does nothing.</para>

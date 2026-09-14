@@ -51,6 +51,26 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitLine([NotNull] SimpleParser.LineContext context);
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFunctionDeclaration([NotNull] SimpleParser.FunctionDeclarationContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFunctionDeclaration([NotNull] SimpleParser.FunctionDeclarationContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.accessModifier"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAccessModifier([NotNull] SimpleParser.AccessModifierContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.accessModifier"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAccessModifier([NotNull] SimpleParser.AccessModifierContext context);
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.statement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -71,6 +91,26 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitVariableDeclaration([NotNull] SimpleParser.VariableDeclarationContext context);
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterType([NotNull] SimpleParser.TypeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitType([NotNull] SimpleParser.TypeContext context);
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.assignment"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -81,6 +121,16 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitAssignment([NotNull] SimpleParser.AssignmentContext context);
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.functionCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -90,6 +140,26 @@ public interface ISimpleListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitFunctionCall([NotNull] SimpleParser.FunctionCallContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.printStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterPrintStatement([NotNull] SimpleParser.PrintStatementContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.printStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitPrintStatement([NotNull] SimpleParser.PrintStatementContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.ifBlock"/>.
 	/// </summary>
@@ -141,26 +211,6 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitForUpdate([NotNull] SimpleParser.ForUpdateContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
-	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.increment"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -180,16 +230,6 @@ public interface ISimpleListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitDecrement([NotNull] SimpleParser.DecrementContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.block"/>.
 	/// </summary>

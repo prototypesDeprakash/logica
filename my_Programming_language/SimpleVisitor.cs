@@ -44,6 +44,18 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitLine([NotNull] SimpleParser.LineContext context);
 	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitFunctionDeclaration([NotNull] SimpleParser.FunctionDeclarationContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.accessModifier"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAccessModifier([NotNull] SimpleParser.AccessModifierContext context);
+	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.statement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -56,17 +68,47 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitVariableDeclaration([NotNull] SimpleParser.VariableDeclarationContext context);
 	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitType([NotNull] SimpleParser.TypeContext context);
+	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.assignment"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitAssignment([NotNull] SimpleParser.AssignmentContext context);
 	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.functionCall"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitFunctionCall([NotNull] SimpleParser.FunctionCallContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.printStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPrintStatement([NotNull] SimpleParser.PrintStatementContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.ifBlock"/>.
 	/// </summary>
@@ -98,18 +140,6 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitForUpdate([NotNull] SimpleParser.ForUpdateContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
-	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
-	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.increment"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -121,12 +151,6 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitDecrement([NotNull] SimpleParser.DecrementContext context);
-	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	/// <return>The visitor result.</return>
-	Result VisitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.block"/>.
 	/// </summary>
