@@ -53,6 +53,19 @@ public class Myarray {
         }
         return true;
     }
+    public void addResize(int value){
+        if(size>=capacity){
+            capacity++;
+        }
+        int[] temp_arr= new int[capacity];
+        for (int i=0;i<arr.length;i++){
+            temp_arr[i]=arr[i];
+        }
+        temp_arr[size]=value;
+        arr=temp_arr;
+        size++;
+
+    }
     public void display_array(){
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
@@ -92,9 +105,11 @@ public class Myarray {
         arr.add(90);
         arr.add(100);
         //arr.add(120);
-        arr.pop();
-        arr.remove(8);
-        arr.remove(1);
+      //  arr.pop();
+      //  arr.remove(8);
+      //  arr.remove(1);
+      arr.addResize(110);
+      arr.addResize(120);
          System.out.println(arr.size());
          System.out.println(arr.Capacity());
          System.out.println("-----array Values ----");
