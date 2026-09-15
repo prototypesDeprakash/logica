@@ -41,15 +41,15 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitProgram([NotNull] SimpleParser.ProgramContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.line"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.topLevelItem"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterLine([NotNull] SimpleParser.LineContext context);
+	void EnterTopLevelItem([NotNull] SimpleParser.TopLevelItemContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.line"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.topLevelItem"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitLine([NotNull] SimpleParser.LineContext context);
+	void ExitTopLevelItem([NotNull] SimpleParser.TopLevelItemContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
 	/// </summary>
@@ -71,6 +71,56 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitAccessModifier([NotNull] SimpleParser.AccessModifierContext context);
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.returnType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterReturnType([NotNull] SimpleParser.ReturnTypeContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.returnType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitReturnType([NotNull] SimpleParser.ReturnTypeContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.parameterList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterParameterList([NotNull] SimpleParser.ParameterListContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.parameterList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitParameterList([NotNull] SimpleParser.ParameterListContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.parameter"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterParameter([NotNull] SimpleParser.ParameterContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.parameter"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitParameter([NotNull] SimpleParser.ParameterContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBlock([NotNull] SimpleParser.BlockContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBlock([NotNull] SimpleParser.BlockContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.blockItem"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBlockItem([NotNull] SimpleParser.BlockItemContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.blockItem"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBlockItem([NotNull] SimpleParser.BlockItemContext context);
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.statement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -80,6 +130,16 @@ public interface ISimpleListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitStatement([NotNull] SimpleParser.StatementContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.expressionStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterExpressionStatement([NotNull] SimpleParser.ExpressionStatementContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.expressionStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitExpressionStatement([NotNull] SimpleParser.ExpressionStatementContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclaration"/>.
 	/// </summary>
@@ -91,15 +151,25 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitVariableDeclaration([NotNull] SimpleParser.VariableDeclarationContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	void EnterVariableDeclarator([NotNull] SimpleParser.VariableDeclaratorContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	void ExitVariableDeclarator([NotNull] SimpleParser.VariableDeclaratorContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclaratorId"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVariableDeclaratorId([NotNull] SimpleParser.VariableDeclaratorIdContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclaratorId"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVariableDeclaratorId([NotNull] SimpleParser.VariableDeclaratorIdContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.type"/>.
 	/// </summary>
@@ -111,25 +181,205 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitType([NotNull] SimpleParser.TypeContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.assignment"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAssignment([NotNull] SimpleParser.AssignmentContext context);
+	void EnterBaseType([NotNull] SimpleParser.BaseTypeContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.assignment"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAssignment([NotNull] SimpleParser.AssignmentContext context);
+	void ExitBaseType([NotNull] SimpleParser.BaseTypeContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayDimensions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	void EnterArrayDimensions([NotNull] SimpleParser.ArrayDimensionsContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayDimensions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	void ExitArrayDimensions([NotNull] SimpleParser.ArrayDimensionsContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterExpression([NotNull] SimpleParser.ExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitExpression([NotNull] SimpleParser.ExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAssignmentExpression([NotNull] SimpleParser.AssignmentExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAssignmentExpression([NotNull] SimpleParser.AssignmentExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentTarget"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAssignmentTarget([NotNull] SimpleParser.AssignmentTargetContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentTarget"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAssignmentTarget([NotNull] SimpleParser.AssignmentTargetContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.assignmentOperator"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAssignmentOperator([NotNull] SimpleParser.AssignmentOperatorContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.assignmentOperator"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAssignmentOperator([NotNull] SimpleParser.AssignmentOperatorContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.conditionalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterConditionalExpression([NotNull] SimpleParser.ConditionalExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.conditionalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitConditionalExpression([NotNull] SimpleParser.ConditionalExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.logicalOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLogicalOrExpression([NotNull] SimpleParser.LogicalOrExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.logicalOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLogicalOrExpression([NotNull] SimpleParser.LogicalOrExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.logicalAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLogicalAndExpression([NotNull] SimpleParser.LogicalAndExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.logicalAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLogicalAndExpression([NotNull] SimpleParser.LogicalAndExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.bitwiseOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBitwiseOrExpression([NotNull] SimpleParser.BitwiseOrExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.bitwiseOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBitwiseOrExpression([NotNull] SimpleParser.BitwiseOrExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.bitwiseXorExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBitwiseXorExpression([NotNull] SimpleParser.BitwiseXorExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.bitwiseXorExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBitwiseXorExpression([NotNull] SimpleParser.BitwiseXorExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.bitwiseAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBitwiseAndExpression([NotNull] SimpleParser.BitwiseAndExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.bitwiseAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBitwiseAndExpression([NotNull] SimpleParser.BitwiseAndExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.equalityExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterEqualityExpression([NotNull] SimpleParser.EqualityExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.equalityExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitEqualityExpression([NotNull] SimpleParser.EqualityExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.relationalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterRelationalExpression([NotNull] SimpleParser.RelationalExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.relationalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitRelationalExpression([NotNull] SimpleParser.RelationalExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.shiftExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterShiftExpression([NotNull] SimpleParser.ShiftExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.shiftExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitShiftExpression([NotNull] SimpleParser.ShiftExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.additiveExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAdditiveExpression([NotNull] SimpleParser.AdditiveExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.additiveExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAdditiveExpression([NotNull] SimpleParser.AdditiveExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.multiplicativeExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterMultiplicativeExpression([NotNull] SimpleParser.MultiplicativeExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.multiplicativeExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitMultiplicativeExpression([NotNull] SimpleParser.MultiplicativeExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.unaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterUnaryExpression([NotNull] SimpleParser.UnaryExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.unaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitUnaryExpression([NotNull] SimpleParser.UnaryExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.postfixExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterPostfixExpression([NotNull] SimpleParser.PostfixExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.postfixExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitPostfixExpression([NotNull] SimpleParser.PostfixExpressionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.primaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterPrimaryExpression([NotNull] SimpleParser.PrimaryExpressionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.primaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitPrimaryExpression([NotNull] SimpleParser.PrimaryExpressionContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.functionCall"/>.
 	/// </summary>
@@ -141,15 +391,85 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitFunctionCall([NotNull] SimpleParser.FunctionCallContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.argumentList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	void EnterArgumentList([NotNull] SimpleParser.ArgumentListContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.argumentList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	void ExitArgumentList([NotNull] SimpleParser.ArgumentListContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.qualifiedName"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterQualifiedName([NotNull] SimpleParser.QualifiedNameContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.qualifiedName"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitQualifiedName([NotNull] SimpleParser.QualifiedNameContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayCreation"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterArrayCreation([NotNull] SimpleParser.ArrayCreationContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayCreation"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitArrayCreation([NotNull] SimpleParser.ArrayCreationContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayCreationDimensions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterArrayCreationDimensions([NotNull] SimpleParser.ArrayCreationDimensionsContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayCreationDimensions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitArrayCreationDimensions([NotNull] SimpleParser.ArrayCreationDimensionsContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayDimension"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterArrayDimension([NotNull] SimpleParser.ArrayDimensionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayDimension"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitArrayDimension([NotNull] SimpleParser.ArrayDimensionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayInitializer"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterArrayInitializer([NotNull] SimpleParser.ArrayInitializerContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayInitializer"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitArrayInitializer([NotNull] SimpleParser.ArrayInitializerContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.expressionList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterExpressionList([NotNull] SimpleParser.ExpressionListContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.expressionList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitExpressionList([NotNull] SimpleParser.ExpressionListContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.arrayAccess"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterArrayAccess([NotNull] SimpleParser.ArrayAccessContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.arrayAccess"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitArrayAccess([NotNull] SimpleParser.ArrayAccessContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.printStatement"/>.
 	/// </summary>
@@ -160,6 +480,36 @@ public interface ISimpleListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitPrintStatement([NotNull] SimpleParser.PrintStatementContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.returnStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterReturnStatement([NotNull] SimpleParser.ReturnStatementContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.returnStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitReturnStatement([NotNull] SimpleParser.ReturnStatementContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.breakStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBreakStatement([NotNull] SimpleParser.BreakStatementContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.breakStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBreakStatement([NotNull] SimpleParser.BreakStatementContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.continueStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterContinueStatement([NotNull] SimpleParser.ContinueStatementContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.continueStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitContinueStatement([NotNull] SimpleParser.ContinueStatementContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.ifBlock"/>.
 	/// </summary>
@@ -201,6 +551,16 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitForInit([NotNull] SimpleParser.ForInitContext context);
 	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
 	/// Enter a parse tree produced by <see cref="SimpleParser.forUpdate"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
@@ -211,53 +571,63 @@ public interface ISimpleListener : IParseTreeListener {
 	/// <param name="context">The parse tree.</param>
 	void ExitForUpdate([NotNull] SimpleParser.ForUpdateContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.increment"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.forEachBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterIncrement([NotNull] SimpleParser.IncrementContext context);
+	void EnterForEachBlock([NotNull] SimpleParser.ForEachBlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.increment"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.forEachBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitIncrement([NotNull] SimpleParser.IncrementContext context);
+	void ExitForEachBlock([NotNull] SimpleParser.ForEachBlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.decrement"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.doWhileBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterDecrement([NotNull] SimpleParser.DecrementContext context);
+	void EnterDoWhileBlock([NotNull] SimpleParser.DoWhileBlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.decrement"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.doWhileBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitDecrement([NotNull] SimpleParser.DecrementContext context);
+	void ExitDoWhileBlock([NotNull] SimpleParser.DoWhileBlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.switchBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBlock([NotNull] SimpleParser.BlockContext context);
+	void EnterSwitchBlock([NotNull] SimpleParser.SwitchBlockContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.switchBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBlock([NotNull] SimpleParser.BlockContext context);
+	void ExitSwitchBlock([NotNull] SimpleParser.SwitchBlockContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.argumentList"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.switchCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterArgumentList([NotNull] SimpleParser.ArgumentListContext context);
+	void EnterSwitchCase([NotNull] SimpleParser.SwitchCaseContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.argumentList"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.switchCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitArgumentList([NotNull] SimpleParser.ArgumentListContext context);
+	void ExitSwitchCase([NotNull] SimpleParser.SwitchCaseContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// Enter a parse tree produced by <see cref="SimpleParser.defaultCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterExpression([NotNull] SimpleParser.ExpressionContext context);
+	void EnterDefaultCase([NotNull] SimpleParser.DefaultCaseContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// Exit a parse tree produced by <see cref="SimpleParser.defaultCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitExpression([NotNull] SimpleParser.ExpressionContext context);
+	void ExitDefaultCase([NotNull] SimpleParser.DefaultCaseContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="SimpleParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterLiteral([NotNull] SimpleParser.LiteralContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="SimpleParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitLiteral([NotNull] SimpleParser.LiteralContext context);
 }

@@ -14,6 +14,9 @@ topLevelItem
     | ifBlock
     | whileBlock
     | forBlock
+    | forEachBlock
+    | doWhileBlock
+    | switchBlock
     ;
 
 // ============================================================
@@ -21,7 +24,7 @@ topLevelItem
 // ============================================================
 
 // public void myscript() { }
-// private int calculate(int x) { return x + 1; }
+// private int add(int a, int b) { return a + b; }
 // void test() { }
 
 functionDeclaration
@@ -34,8 +37,8 @@ accessModifier
     ;
 
 returnType
-    : type
-    | VOID
+    : VOID
+    | type
     ;
 
 parameterList
@@ -43,11 +46,11 @@ parameterList
     ;
 
 parameter
-    : type ID
+    : type variableDeclaratorId
     ;
 
 // ============================================================
-// BLOCK
+// BLOCKS
 // ============================================================
 
 block
@@ -59,6 +62,9 @@ blockItem
     | ifBlock
     | whileBlock
     | forBlock
+    | forEachBlock
+    | doWhileBlock
+    | switchBlock
     ;
 
 // ============================================================
@@ -75,22 +81,39 @@ statement
     ;
 
 // ============================================================
-// VARIABLES
+// EXPRESSION STATEMENT
+// ============================================================
+
+// x = 5;
+// arr[i] = 10;
+// foo();
+// x++;
+
+expressionStatement
+    : expression ';'
+    ;
+
+// ============================================================
+// VARIABLE DECLARATION
 // ============================================================
 
 // int x = 10;
-// boolean ready = true;
-// double water = 0.5;
-// String name = "hello";
-// int[] numbers = new int[10];
-// int[] numbers = {1, 2, 3};
+// int[] arr = new int[10];
+// int[] arr = new int[] {1, 2, 3};
+// int arr[] = new int[10];
+// boolean[] flags;
+// String names[];
 
 variableDeclaration
-    : type ID ('=' expression)? ';'
+    : type variableDeclarator (',' variableDeclarator)* ';'
     ;
 
-variableDeclarationNoSemicolon
-    : type ID ('=' expression)?
+variableDeclarator
+    : variableDeclaratorId ('=' expression)?
+    ;
+
+variableDeclaratorId
+    : ID arrayDimensions?
     ;
 
 // ============================================================
@@ -98,35 +121,61 @@ variableDeclarationNoSemicolon
 // ============================================================
 
 // int
-// double
 // boolean
+// double
+// float
+// long
+// short
+// byte
+// char
 // String
+//
+// and arrays:
+//
 // int[]
-// double[]
+// int[][]
 // boolean[]
-// String[]
+// String[][]
 
 type
-    : baseType ('[' ']')?
+    : baseType arrayDimensions?
     ;
 
 baseType
     : INT_TYPE
+    | LONG_TYPE
     | DOUBLE_TYPE
+    | FLOAT_TYPE
+    | SHORT_TYPE
+    | BYTE_TYPE
     | BOOLEAN_TYPE
+    | CHAR_TYPE
     | STRING_TYPE
     ;
 
+arrayDimensions
+    : ('[' ']')+
+    ;
+
 // ============================================================
-// EXPRESSIONS / ASSIGNMENT
+// EXPRESSIONS
 // ============================================================
 
 expression
     : assignmentExpression
     ;
 
+// ============================================================
+// ASSIGNMENT
+// ============================================================
+
+// x = 10
+// x += 5
+// arr[i] = 20
+// arr[i] *= 2
+
 assignmentExpression
-    : logicalOrExpression
+    : conditionalExpression
     | assignmentTarget assignmentOperator assignmentExpression
     ;
 
@@ -142,10 +191,27 @@ assignmentOperator
     | '*='
     | '/='
     | '%='
+    | '&='
+    | '|='
+    | '^='
+    | '<<='
+    | '>>='
+    | '>>>='
     ;
 
 // ============================================================
-// BOOLEAN LOGIC
+// TERNARY
+// ============================================================
+
+// x > 5 ? 10 : 20
+
+conditionalExpression
+    : logicalOrExpression
+    | logicalOrExpression '?' expression ':' conditionalExpression
+    ;
+
+// ============================================================
+// LOGICAL OR
 // ============================================================
 
 logicalOrExpression
@@ -153,10 +219,53 @@ logicalOrExpression
     | logicalOrExpression '||' logicalAndExpression
     ;
 
+// ============================================================
+// LOGICAL AND
+// ============================================================
+
 logicalAndExpression
-    : equalityExpression
-    | logicalAndExpression '&&' equalityExpression
+    : bitwiseOrExpression
+    | logicalAndExpression '&&' bitwiseOrExpression
     ;
+
+// ============================================================
+// BITWISE OR
+// ============================================================
+
+// a | b
+
+bitwiseOrExpression
+    : bitwiseXorExpression
+    | bitwiseOrExpression '|' bitwiseXorExpression
+    ;
+
+// ============================================================
+// BITWISE XOR
+// ============================================================
+
+// a ^ b
+
+bitwiseXorExpression
+    : bitwiseAndExpression
+    | bitwiseXorExpression '^' bitwiseAndExpression
+    ;
+
+// ============================================================
+// BITWISE AND
+// ============================================================
+
+// a & b
+
+bitwiseAndExpression
+    : equalityExpression
+    | bitwiseAndExpression '&' equalityExpression
+    ;
+
+// ============================================================
+// EQUALITY
+// ============================================================
+
+// == !=
 
 equalityExpression
     : relationalExpression
@@ -164,19 +273,46 @@ equalityExpression
     | equalityExpression '!=' relationalExpression
     ;
 
+// ============================================================
+// RELATIONAL
+// ============================================================
+
+// < > <= >=
+
 relationalExpression
-    : additiveExpression
-    | relationalExpression '<' additiveExpression
-    | relationalExpression '>' additiveExpression
-    | relationalExpression '<=' additiveExpression
-    | relationalExpression '>=' additiveExpression
+    : shiftExpression
+    | relationalExpression '<' shiftExpression
+    | relationalExpression '>' shiftExpression
+    | relationalExpression '<=' shiftExpression
+    | relationalExpression '>=' shiftExpression
     ;
+
+// ============================================================
+// SHIFT
+// ============================================================
+
+// << >> >>>
+
+shiftExpression
+    : additiveExpression
+    | shiftExpression '<<' additiveExpression
+    | shiftExpression '>>' additiveExpression
+    | shiftExpression '>>>' additiveExpression
+    ;
+
+// ============================================================
+// ADDITION / SUBTRACTION
+// ============================================================
 
 additiveExpression
     : multiplicativeExpression
     | additiveExpression '+' multiplicativeExpression
     | additiveExpression '-' multiplicativeExpression
     ;
+
+// ============================================================
+// MULTIPLICATION / DIVISION / MODULO
+// ============================================================
 
 multiplicativeExpression
     : unaryExpression
@@ -185,11 +321,23 @@ multiplicativeExpression
     | multiplicativeExpression '%' unaryExpression
     ;
 
+// ============================================================
+// UNARY
+// ============================================================
+
+// !x
+// +x
+// -x
+// ~x
+// ++x
+// --x
+
 unaryExpression
     : postfixExpression
     | '!' unaryExpression
     | '+' unaryExpression
     | '-' unaryExpression
+    | '~' unaryExpression
     | '++' assignmentTarget
     | '--' assignmentTarget
     ;
@@ -198,11 +346,18 @@ unaryExpression
 // POSTFIX
 // ============================================================
 
+// x++
+// x--
+// arr[i]
+// arr[i][j]
+// arr.length
+
 postfixExpression
     : primaryExpression
     | postfixExpression '++'
     | postfixExpression '--'
     | postfixExpression '[' expression ']'
+    | postfixExpression '.' ID
     ;
 
 // ============================================================
@@ -219,14 +374,13 @@ primaryExpression
     ;
 
 // ============================================================
-// FUNCTION CALL
+// FUNCTION CALLS
 // ============================================================
 
-// move();
-// turnLeft();
-// move(x);
-// getWorldSize();
-// setPosition(x, y);
+// move()
+// move(5)
+// getWorldSize()
+// setPosition(x, y)
 
 functionCall
     : ID '(' argumentList? ')'
@@ -251,20 +405,40 @@ qualifiedName
     ;
 
 // ============================================================
-// ARRAYS
+// ARRAY CREATION
 // ============================================================
 
 // new int[10]
+// new boolean[10]
 // new double[20]
-// new boolean[5]
-// new String[10]
-
-// new int[]{1, 2, 3}
+//
+// new int[3][4]
+// new boolean[3][4]
+//
+// new int[] {1, 2, 3}
+// new boolean[] {true, false, true}
+// new String[] {"A", "B"}
 
 arrayCreation
-    : NEW baseType '[' expression ']' 
-    | NEW baseType '[' ']' arrayInitializer
+    : NEW baseType arrayCreationDimensions arrayInitializer?
     ;
+
+arrayCreationDimensions
+    : arrayDimension arrayDimension*
+    ;
+
+arrayDimension
+    : '[' expression ']'
+    | '[' ']'
+    ;
+
+// ============================================================
+// ARRAY INITIALIZER
+// ============================================================
+
+// {1, 2, 3}
+// {true, false, true}
+// {"A", "B"}
 
 arrayInitializer
     : '{' expressionList? '}'
@@ -278,12 +452,12 @@ expressionList
 // ARRAY ACCESS
 // ============================================================
 
-// numbers[0]
-// numbers[i]
-// matrix[0]     (one-dimensional for now)
+// arr[0]
+// arr[i]
+// arr[i][j]
 
 arrayAccess
-    : qualifiedName '[' expression ']'
+    : qualifiedName ('[' expression ']')+
     ;
 
 // ============================================================
@@ -291,10 +465,11 @@ arrayAccess
 // ============================================================
 
 // Special language feature.
-// This is NOT interpreted as a Java class/object.
+// Not a real Java class/object system.
 
 printStatement
     : PRINTLN '(' expression? ')' ';'
+    | PRINT '(' expression? ')' ';'
     ;
 
 // ============================================================
@@ -318,7 +493,7 @@ continueStatement
     ;
 
 // ============================================================
-// IF
+// IF / ELSE
 // ============================================================
 
 ifBlock
@@ -338,6 +513,10 @@ whileBlock
 // FOR
 // ============================================================
 
+// for (int i = 0; i < 10; i++)
+// for (; i < 10; i++)
+// for (i = 0; i < 10; i++)
+
 forBlock
     : FOR '(' forInit? ';' expression? ';' forUpdate? ')' block
     ;
@@ -347,8 +526,60 @@ forInit
     | expressionList
     ;
 
+variableDeclarationNoSemicolon
+    : type variableDeclarator (',' variableDeclarator)*
+    ;
+
 forUpdate
     : expressionList
+    ;
+
+// ============================================================
+// FOR-EACH
+// ============================================================
+
+// for (int x : arr)
+// for (String s : names)
+
+forEachBlock
+    : FOR '(' type ID ':' expression ')' block
+    ;
+
+// ============================================================
+// DO-WHILE
+// ============================================================
+
+// do { ... } while (x < 10);
+
+doWhileBlock
+    : DO block WHILE '(' expression ')' ';'
+    ;
+
+// ============================================================
+// SWITCH
+// ============================================================
+
+// switch (x) {
+//     case 1:
+//         ...
+//         break;
+//     case Entities.Pumpkin:
+//         ...
+//         break;
+//     default:
+//         ...
+// }
+
+switchBlock
+    : SWITCH '(' expression ')' '{' switchCase* defaultCase? '}'
+    ;
+
+switchCase
+    : CASE (literal | qualifiedName) ':' blockItem*
+    ;
+
+defaultCase
+    : DEFAULT ':' blockItem*
     ;
 
 // ============================================================
@@ -357,8 +588,11 @@ forUpdate
 
 literal
     : INT
+    | LONG
     | DOUBLE
+    | FLOAT
     | STRING
+    | CHAR
     | TRUE
     | FALSE
     | NULL
@@ -380,22 +614,6 @@ VOID
     : 'void'
     ;
 
-INT_TYPE
-    : 'int'
-    ;
-
-DOUBLE_TYPE
-    : 'double'
-    ;
-
-BOOLEAN_TYPE
-    : 'boolean'
-    ;
-
-STRING_TYPE
-    : 'String'
-    ;
-
 IF
     : 'if'
     ;
@@ -412,22 +630,6 @@ FOR
     : 'for'
     ;
 
-TRUE
-    : 'true'
-    ;
-
-FALSE
-    : 'false'
-    ;
-
-NULL
-    : 'null'
-    ;
-
-NEW
-    : 'new'
-    ;
-
 RETURN
     : 'return'
     ;
@@ -440,27 +642,112 @@ CONTINUE
     : 'continue'
     ;
 
-// ============================================================
-// SPECIAL PRINT
-// ============================================================
+NEW
+    : 'new'
+    ;
 
-// One special token.
-// It is NOT a real System class or object.
+DO
+    : 'do'
+    ;
+
+SWITCH
+    : 'switch'
+    ;
+
+CASE
+    : 'case'
+    ;
+
+DEFAULT
+    : 'default'
+    ;
+
+TRUE
+    : 'true'
+    ;
+
+FALSE
+    : 'false'
+    ;
+
+NULL
+    : 'null'
+    ;
+
+INT_TYPE
+    : 'int'
+    ;
+
+LONG_TYPE
+    : 'long'
+    ;
+
+DOUBLE_TYPE
+    : 'double'
+    ;
+
+FLOAT_TYPE
+    : 'float'
+    ;
+
+SHORT_TYPE
+    : 'short'
+    ;
+
+BYTE_TYPE
+    : 'byte'
+    ;
+
+BOOLEAN_TYPE
+    : 'boolean'
+    ;
+
+CHAR_TYPE
+    : 'char'
+    ;
+
+STRING_TYPE
+    : 'String'
+    ;
+
+// ============================================================
+// SPECIAL PRINT TOKENS
+// ============================================================
 
 PRINTLN
     : 'System.out.println'
     ;
 
+PRINT
+    : 'System.out.print'
+    ;
+
 // ============================================================
-// NUMBERS
+// NUMERIC LITERALS
 // ============================================================
 
 DOUBLE
     : [0-9]+ '.' [0-9]+
     ;
 
+FLOAT
+    : [0-9]+ '.' [0-9]+ [fF]
+    ;
+
+LONG
+    : [0-9]+ [lL]
+    ;
+
 INT
     : [0-9]+
+    ;
+
+// ============================================================
+// CHARACTER
+// ============================================================
+
+CHAR
+    : '\'' (~['\\\r\n] | '\\' .) '\''
     ;
 
 // ============================================================

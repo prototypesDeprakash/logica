@@ -38,11 +38,11 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitProgram([NotNull] SimpleParser.ProgramContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.line"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.topLevelItem"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitLine([NotNull] SimpleParser.LineContext context);
+	Result VisitTopLevelItem([NotNull] SimpleParser.TopLevelItemContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.functionDeclaration"/>.
 	/// </summary>
@@ -56,11 +56,47 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitAccessModifier([NotNull] SimpleParser.AccessModifierContext context);
 	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.returnType"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitReturnType([NotNull] SimpleParser.ReturnTypeContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.parameterList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitParameterList([NotNull] SimpleParser.ParameterListContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.parameter"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitParameter([NotNull] SimpleParser.ParameterContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBlock([NotNull] SimpleParser.BlockContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.blockItem"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBlockItem([NotNull] SimpleParser.BlockItemContext context);
+	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.statement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitStatement([NotNull] SimpleParser.StatementContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.expressionStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitExpressionStatement([NotNull] SimpleParser.ExpressionStatementContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclaration"/>.
 	/// </summary>
@@ -68,11 +104,17 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitVariableDeclaration([NotNull] SimpleParser.VariableDeclarationContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclarator"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	Result VisitVariableDeclarator([NotNull] SimpleParser.VariableDeclaratorContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclaratorId"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVariableDeclaratorId([NotNull] SimpleParser.VariableDeclaratorIdContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.type"/>.
 	/// </summary>
@@ -80,17 +122,125 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitType([NotNull] SimpleParser.TypeContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.assignment"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.baseType"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAssignment([NotNull] SimpleParser.AssignmentContext context);
+	Result VisitBaseType([NotNull] SimpleParser.BaseTypeContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentNoSemicolon"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayDimensions"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitAssignmentNoSemicolon([NotNull] SimpleParser.AssignmentNoSemicolonContext context);
+	Result VisitArrayDimensions([NotNull] SimpleParser.ArrayDimensionsContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitExpression([NotNull] SimpleParser.ExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAssignmentExpression([NotNull] SimpleParser.AssignmentExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentTarget"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAssignmentTarget([NotNull] SimpleParser.AssignmentTargetContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.assignmentOperator"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAssignmentOperator([NotNull] SimpleParser.AssignmentOperatorContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.conditionalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitConditionalExpression([NotNull] SimpleParser.ConditionalExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.logicalOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLogicalOrExpression([NotNull] SimpleParser.LogicalOrExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.logicalAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLogicalAndExpression([NotNull] SimpleParser.LogicalAndExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.bitwiseOrExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBitwiseOrExpression([NotNull] SimpleParser.BitwiseOrExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.bitwiseXorExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBitwiseXorExpression([NotNull] SimpleParser.BitwiseXorExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.bitwiseAndExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBitwiseAndExpression([NotNull] SimpleParser.BitwiseAndExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.equalityExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitEqualityExpression([NotNull] SimpleParser.EqualityExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.relationalExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitRelationalExpression([NotNull] SimpleParser.RelationalExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.shiftExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitShiftExpression([NotNull] SimpleParser.ShiftExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.additiveExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAdditiveExpression([NotNull] SimpleParser.AdditiveExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.multiplicativeExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitMultiplicativeExpression([NotNull] SimpleParser.MultiplicativeExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.unaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitUnaryExpression([NotNull] SimpleParser.UnaryExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.postfixExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPostfixExpression([NotNull] SimpleParser.PostfixExpressionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.primaryExpression"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPrimaryExpression([NotNull] SimpleParser.PrimaryExpressionContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.functionCall"/>.
 	/// </summary>
@@ -98,17 +248,77 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitFunctionCall([NotNull] SimpleParser.FunctionCallContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.functionCallNoSemicolon"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.argumentList"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFunctionCallNoSemicolon([NotNull] SimpleParser.FunctionCallNoSemicolonContext context);
+	Result VisitArgumentList([NotNull] SimpleParser.ArgumentListContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.qualifiedName"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitQualifiedName([NotNull] SimpleParser.QualifiedNameContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayCreation"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitArrayCreation([NotNull] SimpleParser.ArrayCreationContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayCreationDimensions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitArrayCreationDimensions([NotNull] SimpleParser.ArrayCreationDimensionsContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayDimension"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitArrayDimension([NotNull] SimpleParser.ArrayDimensionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayInitializer"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitArrayInitializer([NotNull] SimpleParser.ArrayInitializerContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.expressionList"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitExpressionList([NotNull] SimpleParser.ExpressionListContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.arrayAccess"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitArrayAccess([NotNull] SimpleParser.ArrayAccessContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.printStatement"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitPrintStatement([NotNull] SimpleParser.PrintStatementContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.returnStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitReturnStatement([NotNull] SimpleParser.ReturnStatementContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.breakStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitBreakStatement([NotNull] SimpleParser.BreakStatementContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.continueStatement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitContinueStatement([NotNull] SimpleParser.ContinueStatementContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.ifBlock"/>.
 	/// </summary>
@@ -134,39 +344,51 @@ public interface ISimpleVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <return>The visitor result.</return>
 	Result VisitForInit([NotNull] SimpleParser.ForInitContext context);
 	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.variableDeclarationNoSemicolon"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitVariableDeclarationNoSemicolon([NotNull] SimpleParser.VariableDeclarationNoSemicolonContext context);
+	/// <summary>
 	/// Visit a parse tree produced by <see cref="SimpleParser.forUpdate"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitForUpdate([NotNull] SimpleParser.ForUpdateContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.increment"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.forEachBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitIncrement([NotNull] SimpleParser.IncrementContext context);
+	Result VisitForEachBlock([NotNull] SimpleParser.ForEachBlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.decrement"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.doWhileBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitDecrement([NotNull] SimpleParser.DecrementContext context);
+	Result VisitDoWhileBlock([NotNull] SimpleParser.DoWhileBlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.block"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.switchBlock"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitBlock([NotNull] SimpleParser.BlockContext context);
+	Result VisitSwitchBlock([NotNull] SimpleParser.SwitchBlockContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.argumentList"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.switchCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitArgumentList([NotNull] SimpleParser.ArgumentListContext context);
+	Result VisitSwitchCase([NotNull] SimpleParser.SwitchCaseContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="SimpleParser.expression"/>.
+	/// Visit a parse tree produced by <see cref="SimpleParser.defaultCase"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitExpression([NotNull] SimpleParser.ExpressionContext context);
+	Result VisitDefaultCase([NotNull] SimpleParser.DefaultCaseContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="SimpleParser.literal"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLiteral([NotNull] SimpleParser.LiteralContext context);
 }

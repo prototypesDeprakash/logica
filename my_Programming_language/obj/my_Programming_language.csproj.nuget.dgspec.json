@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_Programming_language\\my_Programming_language.csproj": {}
+    "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_programming_Language\\my_Programming_language.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_Programming_language\\my_Programming_language.csproj": {
+    "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_programming_Language\\my_Programming_language.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_Programming_language\\my_Programming_language.csproj",
+        "projectUniqueName": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_programming_Language\\my_Programming_language.csproj",
         "projectName": "my_Programming_language",
-        "projectPath": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_Programming_language\\my_Programming_language.csproj",
+        "projectPath": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_programming_Language\\my_Programming_language.csproj",
         "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_Programming_language\\obj\\",
+        "outputPath": "C:\\Users\\prave\\OneDrive\\Desktop\\logica\\my_programming_Language\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
