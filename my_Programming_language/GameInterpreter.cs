@@ -925,6 +925,7 @@ public class GameInterpreter : SimpleBaseVisitor<object>
         return Visit(context.expression());
     }
 
+/*
     private object ReadQualifiedName(SimpleParser.QualifiedNameContext ctx)
     {
         var ids = ctx.ID();
@@ -948,7 +949,59 @@ public class GameInterpreter : SimpleBaseVisitor<object>
 
         return string.Join(".", parts);
     }
+*/
+private object ReadQualifiedName(SimpleParser.QualifiedNameContext ctx)
+{
+    var ids = ctx.ID();
 
+    // Normal variable
+    if (ids.Length == 1)
+    {
+        string name = ids[0].GetText();
+
+        if (TryGetVariable(name, out object value))
+            return value;
+
+        Console.WriteLine($"Unknown variable: {name}");
+        return null;
+    }
+
+    // ------------------------------------------------
+    // ARRAY.length
+    // ------------------------------------------------
+
+    if (ids.Length == 2 &&
+        ids[1].GetText() == "length")
+    {
+        string arrayName = ids[0].GetText();
+
+        if (TryGetVariable(arrayName, out object value))
+        {
+            if (value is object[] array)
+                return array.Length;
+
+            throw new Exception(
+                $"'{arrayName}' is not an array.");
+        }
+    }
+
+    // ------------------------------------------------
+    // Dotted symbolic values
+    // Example:
+    // Entities.Pumpkin
+    // Items.Water
+    // Grounds.Soil
+    // ------------------------------------------------
+
+    var parts = new string[ids.Length];
+
+    for (int i = 0; i < ids.Length; i++)
+    {
+        parts[i] = ids[i].GetText();
+    }
+
+    return string.Join(".", parts);
+}
     // ============================================
     // ARRAYS
     // ============================================
